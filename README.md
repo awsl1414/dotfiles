@@ -6,10 +6,10 @@
 ### 安装依赖
 ```shell
 
-paru -S zsh oh-my-zsh-git autojump \n 
-zsh-syntax-highlighting zsh-autosuggestions \n
-zsh-theme-powerlevel10k-git \n
-ttf-meslo-nerd-font-powerlevel10k \n 
+paru -S zsh oh-my-zsh-git autojump \
+zsh-syntax-highlighting zsh-autosuggestions \
+zsh-theme-powerlevel10k-git \
+ttf-meslo-nerd-font-powerlevel10k \
 powerline-fonts awesome-terminal-fonts
 
 ```
