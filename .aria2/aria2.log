@@ -1,0 +1,525 @@
+2024-03-30 18:20:18.231469 [INFO] [Context.cc:179] <<--- --- --- ---
+2024-03-30 18:20:18.231505 [INFO] [Context.cc:180]   --- --- --- ---
+2024-03-30 18:20:18.231516 [INFO] [Context.cc:181]   --- --- --- --->>
+2024-03-30 18:20:18.231521 [INFO] [Context.cc:182] aria2 1.37.0
+2024-03-30 18:20:18.231527 [INFO] [Context.cc:183] gcc 13.2.1 20230801
+  built by  x86_64-pc-linux-gnu
+  on        Nov 21 2023 09:18:23
+2024-03-30 18:20:18.231534 [INFO] [Context.cc:184] Linux 6.8.2-zen2-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Thu, 28 Mar 2024 17:06:20 +0000 x86_64
+2024-03-30 18:20:18.231539 [INFO] [Context.cc:185] zlib/1.3 libxml2/2.12.0 sqlite3/3.44.0 GnuTLS/3.8.2 nettle GMP/6.3.0 c-ares/1.22.0 libssh2/1.11.0
+2024-03-30 18:20:18.231545 [INFO] [Context.cc:186] 开始记录日志。
+2024-03-30 18:20:18.231554 [DEBUG] [Context.cc:215] Not setting rlimit NO_FILE: 1024 >= 1024
+2024-03-30 18:20:18.231559 [INFO] [SocketCore.cc:1660] Checking configured addresses
+2024-03-30 18:20:18.231658 [INFO] [SocketCore.cc:1711] Not considered: 127.0.0.1
+2024-03-30 18:20:18.231665 [INFO] [SocketCore.cc:1708] Found configured address: 172.19.229.28
+2024-03-30 18:20:18.231670 [INFO] [SocketCore.cc:1708] Found configured address: 192.168.31.247
+2024-03-30 18:20:18.231675 [INFO] [SocketCore.cc:1711] Not considered: ::1
+2024-03-30 18:20:18.231691 [INFO] [SocketCore.cc:1711] Not considered: fe80::b2f1:4ff4:d8a1:4df1%enp6s0f4u1
+2024-03-30 18:20:18.231702 [INFO] [SocketCore.cc:1711] Not considered: fe80::58e:ff09:a931:4a9%wlp2s0
+2024-03-30 18:20:18.231707 [INFO] [SocketCore.cc:1715] IPv4 configured=1, IPv6 configured=0
+2024-03-30 18:25:54.387026 [INFO] [Context.cc:179] <<--- --- --- ---
+2024-03-30 18:25:54.387069 [INFO] [Context.cc:180]   --- --- --- ---
+2024-03-30 18:25:54.387076 [INFO] [Context.cc:181]   --- --- --- --->>
+2024-03-30 18:25:54.387081 [INFO] [Context.cc:182] aria2 1.37.0
+2024-03-30 18:25:54.387087 [INFO] [Context.cc:183] gcc 13.2.1 20230801
+  built by  x86_64-pc-linux-gnu
+  on        Nov 21 2023 09:18:23
+2024-03-30 18:25:54.387094 [INFO] [Context.cc:184] Linux 6.8.2-zen2-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Thu, 28 Mar 2024 17:06:20 +0000 x86_64
+2024-03-30 18:25:54.387099 [INFO] [Context.cc:185] zlib/1.3 libxml2/2.12.0 sqlite3/3.44.0 GnuTLS/3.8.2 nettle GMP/6.3.0 c-ares/1.22.0 libssh2/1.11.0
+2024-03-30 18:25:54.387105 [INFO] [Context.cc:186] 开始记录日志。
+2024-03-30 18:25:54.387113 [DEBUG] [Context.cc:215] Not setting rlimit NO_FILE: 524288 >= 1024
+2024-03-30 18:25:54.387118 [INFO] [SocketCore.cc:1660] Checking configured addresses
+2024-03-30 18:25:54.387216 [INFO] [SocketCore.cc:1711] Not considered: 127.0.0.1
+2024-03-30 18:25:54.387224 [INFO] [SocketCore.cc:1708] Found configured address: 172.19.229.28
+2024-03-30 18:25:54.387229 [INFO] [SocketCore.cc:1708] Found configured address: 192.168.31.247
+2024-03-30 18:25:54.387234 [INFO] [SocketCore.cc:1711] Not considered: ::1
+2024-03-30 18:25:54.387250 [INFO] [SocketCore.cc:1711] Not considered: fe80::b2f1:4ff4:d8a1:4df1%enp6s0f4u1
+2024-03-30 18:25:54.387261 [INFO] [SocketCore.cc:1711] Not considered: fe80::58e:ff09:a931:4a9%wlp2s0
+2024-03-30 18:25:54.387266 [INFO] [SocketCore.cc:1715] IPv4 configured=1, IPv6 configured=0
+2024-03-30 18:25:54.387365 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-03-30 18:25:54.387433 [INFO] [HttpListenCommand.cc:106] CUID#8 - Using port 6800 for accepting new connections
+2024-03-30 18:25:54.387451 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-03-30 18:25:54.387493 [INFO] [HttpListenCommand.cc:106] CUID#9 - Using port 6800 for accepting new connections
+2024-03-30 18:25:54.387501 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-03-30 18:25:54.393496 [DEBUG] [Platform.cc:88] GnuTLS: <3> ASSERT: dn.c[_gnutls_x509_compare_raw_dn]:974
+2024-03-30 18:25:54.393593 [DEBUG] [Platform.cc:88] GnuTLS: <3> ASSERT: dn.c[_gnutls_x509_compare_raw_dn]:974
+2024-03-30 18:25:54.394570 [INFO] [LibgnutlsTLSContext.cc:158] 147 certificate(s) were imported.
+2024-03-30 18:25:54.699548 [INFO] [HttpListenCommand.cc:77] RPC: Accepted the connection from ::1:44326.
+2024-03-30 18:25:54.699735 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 108
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:54.699778 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.getGlobalStat
+2024-03-30 18:25:54.699951 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:54 GMT
+Content-Length: 163
+Expires: Sat, 30 Mar 2024 10:25:54 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:54.700023 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#10 - HttpServer: all response transmitted.
+2024-03-30 18:25:54.700038 [INFO] [HttpServerResponseCommand.cc:60] CUID#10 - Persist connection.
+2024-03-30 18:25:54.709846 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 110
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:54.709939 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.getGlobalOption
+2024-03-30 18:25:54.710584 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:54 GMT
+Content-Length: 1541
+Expires: Sat, 30 Mar 2024 10:25:54 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:54.710668 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#10 - HttpServer: all response transmitted.
+2024-03-30 18:25:54.710703 [INFO] [HttpServerResponseCommand.cc:60] CUID#10 - Persist connection.
+2024-03-30 18:25:54.715883 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 142
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:54.716171 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.changeGlobalOption
+2024-03-30 18:25:54.716374 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:54 GMT
+Content-Length: 103
+Expires: Sat, 30 Mar 2024 10:25:54 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:54.716567 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#10 - HttpServer: all response transmitted.
+2024-03-30 18:25:54.716605 [INFO] [HttpServerResponseCommand.cc:60] CUID#10 - Persist connection.
+2024-03-30 18:25:54.925028 [INFO] [HttpListenCommand.cc:77] RPC: Accepted the connection from ::1:44340.
+2024-03-30 18:25:54.925109 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 323
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:54.925147 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.tellActive
+2024-03-30 18:25:54.925229 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:54 GMT
+Content-Length: 107
+Expires: Sat, 30 Mar 2024 10:25:54 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:54.925264 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#10 - HttpServer: all response transmitted.
+2024-03-30 18:25:54.925271 [INFO] [HttpServerResponseCommand.cc:60] CUID#10 - Persist connection.
+2024-03-30 18:25:54.925286 [INFO] [HttpListenCommand.cc:77] RPC: Accepted the connection from ::1:44346.
+2024-03-30 18:25:54.925463 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 327
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:54.925514 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.tellWaiting
+2024-03-30 18:25:54.925544 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:54 GMT
+Content-Length: 101
+Expires: Sat, 30 Mar 2024 10:25:54 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:54.925565 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#11 - HttpServer: all response transmitted.
+2024-03-30 18:25:54.925571 [INFO] [HttpServerResponseCommand.cc:60] CUID#11 - Persist connection.
+2024-03-30 18:25:54.927849 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 328
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:54.927888 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.tellStopped
+2024-03-30 18:25:54.927926 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:54 GMT
+Content-Length: 102
+Expires: Sat, 30 Mar 2024 10:25:54 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:54.927958 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#12 - HttpServer: all response transmitted.
+2024-03-30 18:25:54.927966 [INFO] [HttpServerResponseCommand.cc:60] CUID#12 - Persist connection.
+2024-03-30 18:25:55.462218 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 69
+Accept: application/json
+DNT: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+Content-Type: application/json
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:55.488800 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:25:55.488940 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.getGlobalStat
+2024-03-30 18:25:55.489024 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:55 GMT
+Content-Length: 115
+Expires: Sat, 30 Mar 2024 10:25:55 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:55.489107 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#12 - HttpServer: all response transmitted.
+2024-03-30 18:25:55.489114 [INFO] [HttpServerResponseCommand.cc:60] CUID#12 - Persist connection.
+2024-03-30 18:25:55.698467 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 108
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:55.698575 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.getGlobalStat
+2024-03-30 18:25:55.698678 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:55 GMT
+Content-Length: 163
+Expires: Sat, 30 Mar 2024 10:25:55 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:55.698747 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#12 - HttpServer: all response transmitted.
+2024-03-30 18:25:55.698762 [INFO] [HttpServerResponseCommand.cc:60] CUID#12 - Persist connection.
+2024-03-30 18:25:55.925948 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 291
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:55.926054 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 296
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:55.926134 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 295
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:55.926189 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.tellActive
+2024-03-30 18:25:55.926266 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:55 GMT
+Content-Length: 107
+Expires: Sat, 30 Mar 2024 10:25:55 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:55.926305 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.tellStopped
+2024-03-30 18:25:55.926356 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:55 GMT
+Content-Length: 102
+Expires: Sat, 30 Mar 2024 10:25:55 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:55.926382 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.tellWaiting
+2024-03-30 18:25:55.926444 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:55 GMT
+Content-Length: 98
+Expires: Sat, 30 Mar 2024 10:25:55 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:55.926506 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#12 - HttpServer: all response transmitted.
+2024-03-30 18:25:55.926520 [INFO] [HttpServerResponseCommand.cc:60] CUID#12 - Persist connection.
+2024-03-30 18:25:55.926559 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#10 - HttpServer: all response transmitted.
+2024-03-30 18:25:55.926573 [INFO] [HttpServerResponseCommand.cc:60] CUID#10 - Persist connection.
+2024-03-30 18:25:55.926604 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#11 - HttpServer: all response transmitted.
+2024-03-30 18:25:55.926617 [INFO] [HttpServerResponseCommand.cc:60] CUID#11 - Persist connection.
+2024-03-30 18:25:56.698830 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 104
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:56.699008 [INFO] [SaveSessionCommand.cc:73] No change since last serialization or startup. No serialization is necessary this time.
+2024-03-30 18:25:56.699064 [INFO] [rpc_helper.cc:103] Executing RPC method aria2.getGlobalStat
+2024-03-30 18:25:56.699192 [DEBUG] [HttpServer.cc:296] HTTP Server sends response:
+HTTP/1.1 200 OK
+Date: Sat, 30 Mar 2024 10:25:56 GMT
+Content-Length: 158
+Expires: Sat, 30 Mar 2024 10:25:56 GMT
+Cache-Control: no-cache
+Content-Type: application/json-rpc
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+
+
+2024-03-30 18:25:56.699259 [INFO] [AbstractHttpServerResponseCommand.cc:117] CUID#11 - HttpServer: all response transmitted.
+2024-03-30 18:25:56.699274 [INFO] [HttpServerResponseCommand.cc:60] CUID#11 - Persist connection.
+2024-03-30 18:25:56.928233 [INFO] [HttpServer.cc:186] HTTP Server received request
+POST /jsonrpc HTTP/1.1
+Host: localhost:6800
+Connection: keep-alive
+Content-Length: 291
+sec-ch-ua: "Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+sec-ch-ua-platform: "Linux"
+Origin: chrome-extension://jjfgljkjddpcpfapejfkelkbjbehagbh
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: username-localhost-8888="2|1:0|10:1711644828|23:username-localhost-8888|196:eyJ1c2VybmFtZSI6ICIyMWMyOGM2ODE4Njc0MjQ1YWU1ODhkNGE4NjQ3NjNhOCIsICJuYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiZGlzcGxheV9uYW1lIjogIkFub255bW91cyBFaXJlbmUiLCAiaW5pdGlhbHMiOiAiQUUiLCAiY29sb3IiOiBudWxsfQ==|abdb5dcb49cd246d07768f06ede3889bf243e07f1c7e0a5276b2de4f4d8d580c"; _xsrf=2|45946e36|8a8b32ba0333cbefe0cb7f0d2b811dd3|1711644828
+
+
+2024-03-30 18:25:56.928314 [NOTICE] [DownloadEngine.cc:255] 正在关闭程序…再次按 Ctrl-C 可强制关闭程序。
+2024-03-30 18:25:56.933458 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:27:17.733533 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-03-30 18:27:17.733653 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-03-30 18:27:17.733693 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-03-30 18:27:18.954054 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:27:25.462375 [NOTICE] [DownloadEngine.cc:265] 正在紧急停止…
+2024-03-30 18:27:25.488516 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:27:25.516737 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-03-30 18:27:25.516866 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-03-30 18:27:25.516906 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-03-30 18:27:26.703949 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:28:04.705356 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:32:01.331565 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:32:08.667072 [NOTICE] [RequestGroupMan.cc:424] GID 为 e6840269fe166389 的下载项未完成：C:\Users\awsl1414\Downloads/光速虚拟机 3.8.2优化版v3-更换虚拟定位key_wushidi.apk
+2024-03-30 18:32:09.380069 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:32:10.101893 [NOTICE] [RequestGroup.cc:1214] 下载完成：/home/arch/Downloads/光速虚拟机 3.8.2优化版v3-更换虚拟定位key_wushidi.apk
+2024-03-30 18:32:10.471087 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:43:25.481164 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:44:04.481199 [NOTICE] [RequestGroupMan.cc:424] GID 为 ab61d490b54b4612 的下载项未完成：C:\Users\awsl1414\Downloads/光速虚拟机 3.8.2优化版v3-更换虚拟定位key_wushidi.apk
+2024-03-30 18:44:04.704482 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 18:44:14.707867 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-30 19:04:34.370716 [NOTICE] [RequestGroup.cc:1214] 下载完成：C:\Users\awsl1414\Downloads/光速虚拟机 3.8.2优化版v3-更换虚拟定位key_wushidi.apk
+2024-03-30 19:04:35.510939 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-31 12:42:35.226180 [NOTICE] [DownloadEngine.cc:265] 正在紧急停止…
+2024-03-31 12:42:35.232378 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-03-31 12:43:06.339850 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-03-31 12:43:06.340820 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-03-31 12:43:06.340860 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-03-31 12:43:07.351464 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-03-31 13:22:23.529026 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-03-31 13:22:23.535386 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-03-31 13:22:23.757131 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-03-31 13:22:23.757229 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-03-31 13:22:23.757266 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-03-31 13:22:24.768237 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
