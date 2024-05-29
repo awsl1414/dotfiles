@@ -125,3 +125,25 @@ eval "$(pyenv init -)"
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/nvm/init-nvm.sh
+
+# Proxy settings
+proxy_on() {
+    export http_proxy="http://127.0.0.1:7897"
+    export https_proxy="http://127.0.0.1:7897"
+
+    export socks_proxy="socks://127.0.0.1:7897"
+    export no_proxy="localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1"
+    echo "Proxy enabled"
+}
+
+proxy_off() {
+    unset http_proxy
+    unset https_proxy
+    unset ftp_proxy
+    unset socks_proxy
+    unset no_proxy
+    echo "Proxy disabled"
+}
+
+alias proxy-on='proxy_on'
+alias proxy-off='proxy_off'
