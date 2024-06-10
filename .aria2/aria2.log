@@ -1471,3 +1471,4 @@ Exception: [AbstractCommand.cc:351] errorCode=19 URI=https://gh.jiasu.in/https:/
 2024-06-10 18:24:09.199644 [NOTICE] [PeerListenCommand.cc:78] IPv4 BitTorrent：正在监听 TCP 端口 51413
 2024-06-10 18:24:09.199697 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent：正在监听 TCP 端口 51413
 2024-06-10 18:24:10.199873 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 19:27:36.681636 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
