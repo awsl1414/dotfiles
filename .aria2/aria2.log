@@ -1234,3 +1234,240 @@ Exception: [AbstractCommand.cc:351] errorCode=19 URI=https://gh.jiasu.in/https:/
 2024-06-03 09:32:34.532931 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
 2024-06-03 09:32:34.532944 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
 2024-06-03 09:32:35.543940 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 11:15:43.682158 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-03 11:15:43.700979 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 11:16:24.821513 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-03 11:16:24.821663 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-03 11:16:24.821701 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-03 11:16:25.833391 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 18:35:20.808806 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 18:36:33.732567 [NOTICE] [RequestGroupMan.cc:374] Download GID#e557af1bb60d5d3a paused
+2024-06-03 18:36:34.528294 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 18:36:36.752229 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 18:37:07.445726 [NOTICE] [RequestGroupMan.cc:374] Download GID#e557af1bb60d5d3a paused
+2024-06-03 18:37:08.460039 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 18:37:11.528455 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 18:37:25.026308 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/arch/Downloads/finalshell_linux_x64.deb
+2024-06-03 18:37:25.812426 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 19:23:26.700470 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-03 19:23:26.715373 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 19:24:07.558547 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-03 19:24:07.558588 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-03 19:24:07.558600 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-03 19:24:08.569322 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 19:36:15.031193 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-03 19:36:15.170619 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 19:38:03.788345 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-03 19:38:03.788477 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-03 19:38:03.788492 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-03 19:38:04.799858 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:20:48.170481 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:22:39.459954 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:22:40.223507 [NOTICE] [RequestGroup.cc:688] File already exists. Renamed to C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1服务端.1.zip.
+2024-06-03 20:23:15.215565 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:23:16.282675 [NOTICE] [RequestGroup.cc:1214] Download complete: C:\Users\awsl1414\Downloads/[预生成区块] Chunky-1.4.10.jar
+2024-06-03 20:23:17.282862 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:23:27.007072 [NOTICE] [RequestGroup.cc:1214] Download complete: C:\Users\awsl1414\Downloads/[基石-清理] AtomSweep-fabric-0.2.2.jar
+2024-06-03 20:23:27.403984 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:23:32.736061 [NOTICE] [RequestGroupMan.cc:424] Download GID#b23ad5a223e1328c not complete: C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1服务端.1.zip
+2024-06-03 20:23:33.640724 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:23:44.096562 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:26:26.168898 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:26:26.505355 [NOTICE] [RequestGroup.cc:688] File already exists. Renamed to C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1.1.zip.
+2024-06-03 20:26:38.945800 [NOTICE] [RequestGroupMan.cc:424] Download GID#f258ef86f4e23766 not complete: C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1.zip
+2024-06-03 20:26:38.981059 [NOTICE] [RequestGroupMan.cc:424] Download GID#98c8460748d67522 not complete: C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1.1.zip
+2024-06-03 20:26:39.415379 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:28:26.743828 [NOTICE] [RequestGroupMan.cc:424] Download GID#cc3edb52d0f8155f not complete: C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1服务端.zip
+2024-06-03 20:28:27.171131 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:28:51.199113 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:29:51.137802 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 20:55:33.572999 [NOTICE] [RequestGroup.cc:1214] Download complete: C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1.zip
+2024-06-03 20:55:33.999376 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-03 21:04:00.159688 [NOTICE] [RequestGroup.cc:1214] Download complete: C:\Users\awsl1414\Downloads/乌托邦探险之旅3.1服务端.zip
+2024-06-03 21:04:01.205911 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 00:36:23.270106 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-04 00:36:23.288786 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 00:40:39.475623 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-04 00:40:39.475740 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-04 00:40:39.475754 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-04 00:40:40.487207 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 00:46:30.284071 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-04 00:46:30.298858 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 00:47:16.805150 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-04 00:47:16.805373 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-04 00:47:16.805398 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-04 00:47:17.818932 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 00:50:33.904223 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-04 00:50:33.919373 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 12:05:24.036345 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-04 12:05:24.036501 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-04 12:05:24.036518 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-04 12:05:25.047671 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 12:41:13.620972 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-04 12:41:13.636072 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 20:48:43.526115 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-04 20:48:43.526241 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-04 20:48:43.526254 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-04 20:48:44.537572 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 21:44:03.402003 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-04 21:44:03.419378 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-04 22:14:13.663563 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-04 22:14:13.663680 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-04 22:14:13.663693 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-04 22:14:14.675520 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 10:53:26.056630 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-05 10:53:26.078186 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 10:54:26.300279 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-05 10:54:26.300484 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-05 10:54:26.300498 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-05 10:54:27.311526 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 12:52:48.130848 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 12:54:22.438171 [NOTICE] [RequestGroup.cc:1214] Download complete: D:\Downloads/Python植物大战僵尸小游戏源码.zip
+2024-06-05 12:54:23.165249 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 17:53:27.960692 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-05 17:53:27.975591 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 18:48:54.931651 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-05 18:48:54.931907 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-05 18:48:54.931926 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-05 18:48:55.943309 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 20:50:43.096680 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-05 20:50:43.115232 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 20:51:21.844049 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-05 20:51:21.844285 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-05 20:51:21.844299 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-05 20:51:22.855445 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-05 20:51:32.313801 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-05 20:51:32.328655 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-06 13:23:50.803928 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-06 13:23:50.804050 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-06 13:23:50.804064 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-06 13:23:51.815497 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-06 13:23:58.123829 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-06 13:23:58.138786 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-06 13:53:24.953742 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-06 13:53:24.953860 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-06 13:53:24.953875 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-06 13:53:25.965164 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-06 13:57:44.287986 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-06 13:57:44.314913 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-06 19:52:29.211452 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-06 19:52:29.211575 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-06 19:52:29.211589 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-06 19:52:30.223545 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-06 21:41:06.758462 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-06 21:41:06.777012 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-06 22:23:37.637813 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-06 22:23:37.637946 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-06 22:23:37.637965 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-06 22:23:38.649719 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-07 16:32:01.090260 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-07 16:32:01.105272 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-07 17:51:30.630356 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-07 17:51:30.630518 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-07 17:51:30.630533 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-07 17:51:31.646797 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-07 18:35:27.081324 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-07 18:35:32.341906 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/arch/Downloads//【P1】P1PyTorch环境的配置及安装（ConfigurationandInstallation.mp4
+2024-06-07 18:35:33.417286 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-07 19:18:49.848796 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-07 19:18:49.866854 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-09 13:23:07.095119 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-09 13:23:07.095333 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-09 13:23:07.095348 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-09 13:23:08.106122 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-09 15:44:46.684752 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-09 15:44:46.719125 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-09 15:46:29.026881 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-09 15:46:29.027024 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-09 15:46:29.027057 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-09 15:46:30.040364 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-09 18:37:48.927340 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-09 18:37:48.942466 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-09 19:10:30.175838 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-09 19:10:30.176021 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-09 19:10:30.176049 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-09 19:10:31.191476 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-09 19:43:48.691142 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-09 19:43:48.723184 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-10 12:50:50.896244 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-10 12:50:50.896412 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC: listening on TCP port 6800
+2024-06-10 12:50:50.896444 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC: listening on TCP port 6800
+2024-06-10 12:50:51.908265 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-10 17:06:46.695618 [NOTICE] [DHTConnectionImpl.cc:82] IPv4 DHT: listening on UDP port 51413
+2024-06-10 17:06:46.697470 [NOTICE] [DHTConnectionImpl.cc:82] IPv6 DHT: listening on UDP port 51413
+2024-06-10 17:06:46.697663 [NOTICE] [PeerListenCommand.cc:78] IPv4 BitTorrent: listening on TCP port 51413
+2024-06-10 17:06:46.697683 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent: listening on TCP port 51413
+2024-06-10 17:06:47.274283 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-10 17:07:10.599757 [NOTICE] [RequestGroupMan.cc:424] Download GID#95e0b9167d089df7 not complete: /home/arch/Downloads/Howl's Moving Castle (2004) 1080p AV1 Opus [UnAV1Chain].mkv
+2024-06-10 17:07:11.628451 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-10 17:07:26.803317 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2024-06-10 17:07:26.853787 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/arch/.aria2/aria2.session' successfully.
+2024-06-10 17:07:26.901363 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-10 17:07:26.901532 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:07:26.901589 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:07:28.272522 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:08:14.586294 [NOTICE] [DHTConnectionImpl.cc:82] IPv4 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:08:14.588516 [NOTICE] [DHTConnectionImpl.cc:82] IPv6 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:08:14.588788 [NOTICE] [PeerListenCommand.cc:78] IPv4 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:08:14.588817 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:08:15.096164 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:13:07.493859 [NOTICE] [RequestGroupMan.cc:424] GID 为 91b5ef76a237d8a5 的下载项未完成：/home/arch/Downloads/Howl's Moving Castle (2004) 1080p AV1 Opus [UnAV1Chain].mkv
+2024-06-10 17:13:08.526112 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:20:23.776428 [NOTICE] [DownloadEngine.cc:265] 正在紧急停止…
+2024-06-10 17:20:23.806890 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:20:23.867898 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-10 17:20:23.868086 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:20:23.868157 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:20:25.478702 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:20:37.853256 [NOTICE] [DHTConnectionImpl.cc:82] IPv4 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:20:37.855856 [NOTICE] [DHTConnectionImpl.cc:82] IPv6 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:20:37.856075 [NOTICE] [PeerListenCommand.cc:78] IPv4 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:20:37.856115 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:20:38.091837 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:22:45.074373 [NOTICE] [DownloadEngine.cc:265] 正在紧急停止…
+2024-06-10 17:22:45.117153 [NOTICE] [RequestGroupMan.cc:424] GID 为 2741f3ae09ec23c6 的下载项未完成：/home/arch/Downloads/Howl's Moving Castle (2004) 1080p AV1 Opus [UnAV1Chain].mkv
+2024-06-10 17:22:45.129150 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:22:45.175260 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2024-06-10 17:22:45.175361 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-10 17:22:45.175573 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:22:45.175658 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:22:45.192228 [NOTICE] [DHTConnectionImpl.cc:82] IPv4 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:22:45.199791 [NOTICE] [DHTConnectionImpl.cc:82] IPv6 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:22:45.199927 [NOTICE] [PeerListenCommand.cc:78] IPv4 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:22:45.199961 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:22:46.206462 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:28:33.958211 [NOTICE] [DownloadEngine.cc:265] 正在紧急停止…
+2024-06-10 17:28:33.997534 [NOTICE] [RequestGroupMan.cc:424] GID 为 2741f3ae09ec23c6 的下载项未完成：/home/arch/Downloads/Howl's Moving Castle (2004) 1080p AV1 Opus [UnAV1Chain].mkv
+2024-06-10 17:28:34.011045 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:28:34.043351 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2024-06-10 17:28:34.043411 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-10 17:28:34.043460 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:28:34.043482 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-06-10 17:28:34.057246 [NOTICE] [DHTConnectionImpl.cc:82] IPv4 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:28:34.065039 [NOTICE] [DHTConnectionImpl.cc:82] IPv6 DHT：正在监听 UDP 端口 51413
+2024-06-10 17:28:34.071176 [NOTICE] [PeerListenCommand.cc:78] IPv4 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:28:34.071222 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 17:28:35.082879 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:28:53.791956 [NOTICE] [RequestGroupMan.cc:424] GID 为 2741f3ae09ec23c6 的下载项未完成：/home/arch/Downloads/Howl's Moving Castle (2004) 1080p AV1 Opus [UnAV1Chain].mkv
+2024-06-10 17:28:54.154181 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:29:26.279650 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:30:01.632095 [NOTICE] [RequestGroupMan.cc:374] GID 为 20611f1655c0a235 的下载项已暂停
+2024-06-10 17:30:02.647690 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:30:03.638522 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:30:09.554512 [NOTICE] [RequestGroupMan.cc:374] GID 为 20611f1655c0a235 的下载项已暂停
+2024-06-10 17:30:10.092036 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:30:11.670507 [NOTICE] [RequestGroup.cc:1214] 下载完成：/home/arch/Downloads/QQ_9.9.11_240606_x64_01.exe
+2024-06-10 17:30:12.513039 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 17:30:45.104033 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 18:24:09.081106 [NOTICE] [DownloadEngine.cc:265] 正在紧急停止…
+2024-06-10 18:24:09.112172 [NOTICE] [RequestGroupMan.cc:424] GID 为 80fa1ba756b7c597 的下载项未完成：/home/arch/Downloads/Howl's Moving Castle (2004) 1080p AV1 Opus [UnAV1Chain].mkv
+2024-06-10 18:24:09.125389 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 18:24:09.176660 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2024-06-10 18:24:09.176709 [WARN] [DownloadEngineFactory.cc:198] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
+2024-06-10 18:24:09.176757 [NOTICE] [HttpListenCommand.cc:108] IPv4 RPC：正在监听 TCP 端口 6800
+2024-06-10 18:24:09.176778 [NOTICE] [HttpListenCommand.cc:108] IPv6 RPC：正在监听 TCP 端口 6800
+2024-06-10 18:24:09.187286 [NOTICE] [DHTConnectionImpl.cc:82] IPv4 DHT：正在监听 UDP 端口 51413
+2024-06-10 18:24:09.193520 [NOTICE] [DHTConnectionImpl.cc:82] IPv6 DHT：正在监听 UDP 端口 51413
+2024-06-10 18:24:09.199644 [NOTICE] [PeerListenCommand.cc:78] IPv4 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 18:24:09.199697 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent：正在监听 TCP 端口 51413
+2024-06-10 18:24:10.199873 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
