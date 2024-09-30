@@ -1,0 +1,9 @@
+[source.crates-io]
+replace-with = 'bfsu'
+
+[source.ustc]
+registry = "sparse+https://mirrors.ustc.edu.cn/crates.io-index/"
+
+
+[source.bfsu]
+registry = "https://mirrors.bfsu.edu.cn/git/crates.io-index.git"

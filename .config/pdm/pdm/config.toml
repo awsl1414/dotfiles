@@ -1,0 +1,5 @@
+[pypi]
+url = "https://mirrors.bfsu.edu.cn/pypi/web/simple"
+
+[venv]
+backend = "venv"

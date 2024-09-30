@@ -111,6 +111,10 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# 设置GTK程序缩放
+# export GDK_SCALE=1.5
+# export GDK_DPI_SCALE=1.5
+
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
@@ -120,11 +124,27 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+
+# go
+export PATH=$PATH:$HOME/go/bin
+# go end
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/nvm/init-nvm.sh
+
+
+# pnpm
+export PNPM_HOME="/home/arch/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 
 # Proxy settings
 proxy_on() {
@@ -146,3 +166,8 @@ proxy_off() {
 
 alias proxy-on='proxy_on'
 alias proxy-off='proxy_off'
+
+
+
+# Created by `pipx` on 2024-07-31 10:39:56
+export PATH="$PATH:/home/arch/.local/bin"

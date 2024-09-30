@@ -1472,3 +1472,7 @@ Exception: [AbstractCommand.cc:351] errorCode=19 URI=https://gh.jiasu.in/https:/
 2024-06-10 18:24:09.199697 [NOTICE] [PeerListenCommand.cc:78] IPv6 BitTorrent：正在监听 TCP 端口 51413
 2024-06-10 18:24:10.199873 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
 2024-06-10 19:27:36.681636 [NOTICE] [SaveSessionCommand.cc:81] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
+2024-06-10 20:13:47.128002 [NOTICE] [DownloadEngine.cc:265] 正在紧急停止…
+2024-06-10 20:13:47.151819 [NOTICE] [RequestGroup.cc:1214] 下载完成：/home/arch/Downloads/Howl's Moving Castle (2004) 1080p AV1 Opus [UnAV1Chain].mkv
+2024-06-10 20:13:47.151872 [NOTICE] [RequestGroup.cc:1228] 您的分享比率为 0.0，已上传/已下载=0B/1.6GiB
+2024-06-10 20:13:47.159069 [NOTICE] [MultiUrlRequestInfo.cc:341] 会话已成功序列化至 /home/arch/.aria2/aria2.session。
