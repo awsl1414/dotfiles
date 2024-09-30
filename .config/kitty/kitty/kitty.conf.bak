@@ -1,3 +1,4 @@
+close_window
 
 # 要获取支持字体的完整列表，请使用“kitty+list fonts”命令。
 # BEGIN_KITTY_FONTS
@@ -33,6 +34,8 @@ mouse_map ctrl+left click ungrabbed mouse_handle_click selection link prompt
 mouse_map ctrl+left press ungrabbed mouse_selection normal
 
 mouse_map right press ungrabbed copy_to_clipboard
+
+
 
 #: If enabled, the window size will be remembered so that new
 #: instances of kitty will have the same size as the previous
@@ -265,7 +268,7 @@ map ctrl+a>shift+d     debug_config
 
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Macchiato
+# OneDark-Pro
 include current-theme.conf
 # END_KITTY_THEME
 
