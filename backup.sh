@@ -32,7 +32,7 @@ for FILE in "${FILES_TO_BACKUP[@]}"; do
 
         # 如果是目录，直接创建目录并复制
         if [ -d "$FILE" ]; then
-            mkdir -p "$TARGET_PATH"
+            mkdir -p "$(dirname "$TARGET_PATH")"
             cp -r "$FILE" "$TARGET_PATH"
             echo "已备份目录: $FILE 到 $TARGET_PATH"
         else
