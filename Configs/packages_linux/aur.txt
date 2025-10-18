@@ -1,0 +1,6 @@
+archlinuxcn-keyring
+fcitx5-theme-wechat
+rime-ice-pinyin-git
+linuxqq
+visual-studio-code-bin
+zen-browser-bin
