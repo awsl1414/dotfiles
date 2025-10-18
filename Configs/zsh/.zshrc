@@ -117,72 +117,10 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
-if [[ ! -d $ZSH_CACHE_DIR ]]; then
-  mkdir $ZSH_CACHE_DIR
-fi
-
-function proxy() {
-    local http_proxy_url="http://localhost:7897"
-    local socks_proxy_url="socks5://localhost:7897"
-
-    case "$1" in
-        "on")
-            # HTTP/HTTPS 代理
-            export http_proxy="$http_proxy_url"
-            export https_proxy="$http_proxy_url"
-            export HTTP_PROXY="$http_proxy_url"
-            export HTTPS_PROXY="$http_proxy_url"
-
-            # SOCKS 代理
-            export all_proxy="$socks_proxy_url"
-            export ALL_PROXY="$socks_proxy_url"
-
-            echo "🔌 代理已开启"
-            echo "   HTTP/HTTPS: $http_proxy_url"
-            echo "   SOCKS: $socks_proxy_url"
-            ;;
-        "off")
-            # 取消 HTTP/HTTPS 代理
-            unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY
-
-            # 取消 SOCKS 代理
-            unset all_proxy ALL_PROXY
-
-            echo "🔓 代理已关闭"
-            ;;
-        "status")
-            echo "HTTP代理: ${http_proxy:-未设置}"
-            echo "HTTPS代理: ${https_proxy:-未设置}"
-            echo "SOCKS代理: ${all_proxy:-未设置}"
-            ;;
-        *)
-            echo "终端代理使用方法:"
-            echo "  proxy on     - 开启代理"
-            echo "  proxy off    - 关闭代理"
-            echo "  proxy status - 查看状态"
-            ;;
-    esac
-}
-
-# go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-# cargo
-export PATH=$PATH:$HOME/.cargo/bin
-
-# bun completions
-[ -s "/home/arch/.bun/_bun" ] && source "/home/arch/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-# Created by `pipx` on 2025-08-23 13:15:59
-export PATH="$PATH:/home/arch/.local/bin"
-
-export NVM_NODEJS_ORG_MIRROR="https://mirrors.tuna.tsinghua.edu.cn/nodejs-release"
-export RUSTUP_DIST_SERVER="https://rsproxy.cn"
-export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
-
 source /usr/share/nvm/init-nvm.sh
+
+export ZSH_HOME="$HOME/.zsh"
+source $ZSH_HOME/functions.zsh
+source $ZSH_HOME/path.zsh
+source $ZSH_HOME/mirrors.zsh
+source $ZSH_HOME/aliases.zsh
