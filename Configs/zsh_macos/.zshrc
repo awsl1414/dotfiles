@@ -117,8 +117,6 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source /usr/share/nvm/init-nvm.sh
-
 export ZSH_HOME="$HOME/.zsh"
 source $ZSH_HOME/functions.zsh
 source $ZSH_HOME/path.zsh
