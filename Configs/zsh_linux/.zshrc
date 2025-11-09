@@ -118,9 +118,8 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source /usr/share/nvm/init-nvm.sh
+eval "$(zoxide init zsh)"
 
 export ZSH_HOME="$HOME/.zsh"
 source $ZSH_HOME/functions.zsh
-source $ZSH_HOME/path.zsh
-source $ZSH_HOME/mirrors.zsh
 source $ZSH_HOME/aliases.zsh

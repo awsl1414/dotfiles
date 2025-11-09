@@ -119,6 +119,6 @@ fi
 
 export ZSH_HOME="$HOME/.zsh"
 source $ZSH_HOME/functions.zsh
-source $ZSH_HOME/path.zsh
-source $ZSH_HOME/mirrors.zsh
 source $ZSH_HOME/aliases.zsh
+
+eval "$(zoxide init zsh)"
