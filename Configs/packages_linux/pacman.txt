@@ -7,3 +7,4 @@ plasma
 uv
 zed
 oculante
+zoxide

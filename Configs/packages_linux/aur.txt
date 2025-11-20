@@ -4,4 +4,4 @@ rime-ice-pinyin-git
 linuxqq
 visual-studio-code-bin
 zen-browser-bin
-weztrem-nightly-bin
+wezterm-nightly-bin
