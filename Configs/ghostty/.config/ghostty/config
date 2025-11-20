@@ -1,0 +1,71 @@
+# Ghostty 配置
+# 不能在同一行写注释
+
+# 字体配置
+font-family = "Maple Mono NF CN Medium"
+font-family-bold = "Maple Mono NF CN Bold"
+font-family-italic = "Maple Mono NF CN Italic"
+font-family-bold-italic = "Maple Mono NF CN Bold Italic"
+
+# 合成样式（如果字体本身不支持某种样式，可以合成）
+# font-synthetic-style = true
+
+# 如果需要可选的 OpenType features，请在单独行设置（示例，按需启用）
+font-feature = "+liga,+zero"
+
+# 关闭关闭窗口 / 关闭程序的确认弹窗
+confirm-close-surface = false
+
+# 回滚缓冲（以字节为单位）
+# 例如 1048576 表示 1 MiB 回滚缓冲
+scrollback-limit = 1048576
+
+# 滚动行为
+scroll-to-bottom = keystroke
+
+# 最小对比度（前景/背景）
+minimum-contrast = 1.1
+
+# 光标与光标覆盖文字颜色
+cursor-color = cell-foreground
+cursor-text = cell-foreground
+
+# 工作目录设置
+working-directory = home
+window-inherit-working-directory = false
+
+# 图像存储限制（以字节为单位）
+# 例如 335544320 表示 320 MiB
+image-storage-limit = 335544320
+
+# 钟铃（可选）
+# bell-audio-path = "/home/user/.config/ghostty/bell.wav"
+# bell-audio-volume = 0.5
+
+# Shell 集成（按需设置；示例）
+shell-integration = zsh
+
+# 窗口子标题（仅在支持的平台上有效）
+window-subtitle = working-directory
+
+# 自定义着色器（按需）
+# custom-shader = "/path/to/my-shader.glsl"
+
+# 背景透明度（按需）
+# background-opacity = 0.9
+
+# vsync（按需）
+# window-vsync = true
+
+
+# 水平（左右）边距，以 “点”（points）为单位  
+window-padding-x = 10, 15  
+
+# 垂直（上下）边距，以 “点” 为单位  
+window-padding-y = 8, 12  
+
+# 是否平衡多余 padding（当内容和边框尺寸不整除时）  
+window-padding-balance = true  
+
+# 边距区域 (padding) 的颜色，可以是背景或扩展最近单元格背景  
+window-padding-color = extend  
