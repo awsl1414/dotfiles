@@ -7,6 +7,9 @@ font-family-bold = "Maple Mono NF CN Bold"
 font-family-italic = "Maple Mono NF CN Italic"
 font-family-bold-italic = "Maple Mono NF CN Bold Italic"
 
+# 主题
+theme = Catppuccin Macchiato
+
 # 合成样式（如果字体本身不支持某种样式，可以合成）
 # font-synthetic-style = true
 
