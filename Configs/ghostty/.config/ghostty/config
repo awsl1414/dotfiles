@@ -1,20 +1,31 @@
 # Ghostty 配置
 # 不能在同一行写注释
 
+# 主题
+theme = Catppuccin Macchiato
+
+
 # 字体配置
-font-family = "Maple Mono NF CN Medium"
+
+font-size = 12.5
+
+font-family = "Maple Mono NF CN"
 font-family-bold = "Maple Mono NF CN Bold"
 font-family-italic = "Maple Mono NF CN Italic"
 font-family-bold-italic = "Maple Mono NF CN Bold Italic"
 
-# 主题
-theme = Catppuccin Macchiato
 
-# 合成样式（如果字体本身不支持某种样式，可以合成）
-# font-synthetic-style = true
+# 当字体本身没有 bold/italic 时，是否由 Ghostty 合成（默认 true）
+# 可显式设置为 true/false 或用 "no-bold,no-italic" 之类的组合来禁用特定合成样式
+font-synthetic-style = false
 
-# 如果需要可选的 OpenType features，请在单独行设置（示例，按需启用）
-font-feature = "+liga,+zero"
+
+# --- OpenType 字体特性（font-feature） ---
+# Maple Mono 含有编程连字（ligatures）与 Nerd 图标，通常希望：
+#  - 保持常规上下文连字（calt）以支持常见编程连字
+#  - 禁用离散连字（dlig）或部分不想要的 ligatures 时可显式关闭
+# 语法参考：可以用 feat / +feat / -feat / feat=1 / "feat" 等形式，支持逗号分隔多个特性。详见官方。
+font-feature = "calt, +liga, -dlig"
 
 # 关闭关闭窗口 / 关闭程序的确认弹窗
 confirm-close-surface = false
@@ -62,7 +73,7 @@ window-subtitle = working-directory
 
 
 # 水平（左右）边距，以 “点”（points）为单位  
-window-padding-x = 10, 15  
+window-padding-x = 8, 12  
 
 # 垂直（上下）边距，以 “点” 为单位  
 window-padding-y = 8, 12  
