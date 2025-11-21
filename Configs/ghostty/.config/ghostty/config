@@ -83,3 +83,12 @@ window-padding-balance = true
 
 # 边距区域 (padding) 的颜色，可以是背景或扩展最近单元格背景  
 window-padding-color = extend  
+
+# 下划线光标
+cursor-style = underline
+
+# 光标闪烁
+cursor-style-blink = true
+
+# 光标粗细
+adjust-cursor-thickness = 2
