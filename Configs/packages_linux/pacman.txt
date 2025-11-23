@@ -8,3 +8,6 @@ uv
 zed
 oculante
 zoxide
+ccache
+aria2
+ghostty
