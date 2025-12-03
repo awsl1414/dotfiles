@@ -40,11 +40,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
 
 elif [[ "$(uname)" == "Linux" ]]; then
     # Linux 系统，默认 archlinux
-    # 如果 nvm 未安装，则使用 pacman 安装
-    if ! command -v nvm &> /dev/null; then
-        echo "nvm 未安装，正在使用 pacman 安装..."
-        sudo pacman -Sy --noconfirm nvm
-    fi
+        sudo pacman -Sy --need --noconfirm nvm
 fi
 
 # 加载 NVM 环境
