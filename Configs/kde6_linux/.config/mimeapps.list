@@ -1,0 +1,21 @@
+[Added Associations]
+image/avif=oculante.desktop;
+image/bmp=oculante.desktop;
+image/heif=oculante.desktop;
+image/jpeg=oculante.desktop;
+image/png=oculante.desktop;
+image/webp=oculante.desktop;
+image/x-icns=oculante.desktop;
+x-scheme-handler/http=zen-browser.desktop;
+x-scheme-handler/https=zen-browser.desktop;
+
+[Default Applications]
+image/avif=oculante.desktop;
+image/bmp=oculante.desktop;
+image/heif=oculante.desktop;
+image/jpeg=oculante.desktop;
+image/png=oculante.desktop;
+image/webp=oculante.desktop;
+image/x-icns=oculante.desktop;
+x-scheme-handler/http=zen-browser.desktop;
+x-scheme-handler/https=zen-browser.desktop;
