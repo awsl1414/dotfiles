@@ -15,9 +15,9 @@ vlc
 mpv
 btop
 rocm-smi-lib
+noise-suppression-for-voice
 
 archlinuxcn-keyring
-fcitx5-theme-wechat
 rime-ice-pinyin-git
 linuxqq
 visual-studio-code-bin
@@ -42,6 +42,7 @@ steam-native-runtime
 fcitx5-skin-fluentlight-git
 fcitx5-skin-fluentdark-git
 fcitx5-themes-candlelight
+fcitx5-theme-wechat
 
 zen-browser-bin
 wemeet-bin
