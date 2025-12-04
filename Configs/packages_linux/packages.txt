@@ -11,6 +11,8 @@ zoxide
 ccache
 aria2
 ghostty
+vlc
+mpv
 
 archlinuxcn-keyring
 fcitx5-theme-wechat
@@ -38,3 +40,7 @@ steam-native-runtime
 fcitx5-skin-fluentlight-git
 fcitx5-skin-fluentdark-git
 fcitx5-themes-candlelight
+
+zen-browser-bin
+wemeet-bin
+wechat-bin
