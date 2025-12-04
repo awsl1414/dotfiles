@@ -13,6 +13,8 @@ aria2
 ghostty
 vlc
 mpv
+btop
+rocm-smi-lib
 
 archlinuxcn-keyring
 fcitx5-theme-wechat
@@ -44,3 +46,10 @@ fcitx5-themes-candlelight
 zen-browser-bin
 wemeet-bin
 wechat-bin
+
+adobe-source-han-serif-cn-fonts
+wqy-zenhei
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
