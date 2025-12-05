@@ -16,6 +16,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+# export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 
 eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -122,3 +122,8 @@ source $ZSH_HOME/functions.zsh
 source $ZSH_HOME/aliases.zsh
 
 eval "$(zoxide init zsh)"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/logan/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
