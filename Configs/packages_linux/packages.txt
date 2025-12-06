@@ -16,6 +16,10 @@ mpv
 btop
 rocm-smi-lib
 noise-suppression-for-voice
+flameshot
+fastfetch
+jq
+kdialog
 
 archlinuxcn-keyring
 rime-ice-pinyin-git
