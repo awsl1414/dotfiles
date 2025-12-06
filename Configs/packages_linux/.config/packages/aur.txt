@@ -1,0 +1,14 @@
+linuxqq
+visual-studio-code-bin
+wezterm-nightly-bin
+
+fcitx5-skin-fluentlight-git
+fcitx5-skin-fluentdark-git
+fcitx5-themes-candlelight
+fcitx5-theme-wechat
+
+zen-browser-bin
+wemeet-bin
+wechat-bin
+
+bun-bin
