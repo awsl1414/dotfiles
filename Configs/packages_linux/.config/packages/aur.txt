@@ -1,4 +1,4 @@
-linuxqq
+linuxqq-nt
 visual-studio-code-bin
 wezterm-nightly-bin
 

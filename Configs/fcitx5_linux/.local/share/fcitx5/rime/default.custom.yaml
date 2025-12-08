@@ -11,3 +11,5 @@ patch:
     # 禁用 Ctrl + ` 方案选单菜单（保留 F4）
     switcher/hotkeys:
       - F4
+    # 设置候选词个数为7个
+    menu/page_size: 7
