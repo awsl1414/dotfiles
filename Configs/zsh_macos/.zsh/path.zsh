@@ -20,3 +20,5 @@ export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export PATH="/Users/logan/.bun/bin:$PATH"
