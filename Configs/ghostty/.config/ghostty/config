@@ -32,7 +32,7 @@ confirm-close-surface = false
 
 # 回滚缓冲（以字节为单位）
 # 例如 1048576 表示 1 MiB 回滚缓冲
-scrollback-limit = 1048576
+scrollback-limit = 3145728
 
 # 滚动行为
 scroll-to-bottom = keystroke
