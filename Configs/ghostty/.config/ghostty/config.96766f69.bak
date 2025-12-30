@@ -92,4 +92,3 @@ cursor-style-blink = true
 
 # 光标粗细
 adjust-cursor-thickness = 2
-keybind = shift+enter=text:\x1b\r
