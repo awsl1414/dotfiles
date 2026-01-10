@@ -1,3 +1,12 @@
+if [[ "$ARCH" == "arm64" ]]; then
+    echo "Apple Silicon"
+    export HOMEBREW_PREFIX="/opt/homebrew"
+elif [[ "$ARCH" == "x86_64" ]]; then
+    echo "Intel Chip"
+    export HOMEBREW_PREFIX="/usr/local"
+else
+    echo "Unknown architecture: $ARCH"
+fi
 
 # go
 export GOPATH=$HOME/go
@@ -11,17 +20,17 @@ export PATH="$PATH:$HOME/.local/bin"
 
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 
-export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
-# export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/rustup/bin:$PATH"
+# export PATH="$HOMEBREW_PREFIX/opt/curl/bin:$PATH"
 
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
 
-export PATH="/Users/logan/.bun/bin:$PATH"
+export PATH="$HOME/.bun/bin:$PATH"
 
 if command -v brew >/dev/null 2>&1; then
     

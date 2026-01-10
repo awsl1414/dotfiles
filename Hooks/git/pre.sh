@@ -3,6 +3,17 @@
 # 如果任何命令失败，则立即退出
 set -e
 
+if [[ "$ARCH" == "arm64" ]]; then
+    echo "Apple Silicon"
+    export HOMEBREW_PREFIX="/opt/homebrew"
+elif [[ "$ARCH" == "x86_64" ]]; then
+    echo "Intel Chip"
+    export HOMEBREW_PREFIX="/usr/local"
+else
+    echo "Unknown architecture: $ARCH"
+fi
+
+
 # 判断系统类型
 if [[ "$(uname)" == "Darwin" ]]; then
     # macOS 系统
@@ -11,7 +22,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
     # 确保 brew 命令在 PATH 中
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    eval "$("${HOMEBREW_PREFIX}/bin/brew" shellenv)"
 
     # 如果 bun 未安装，则使用 brew 安装
     if ! command -v bun &> /dev/null; then
