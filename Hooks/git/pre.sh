@@ -3,6 +3,7 @@
 # 如果任何命令失败，则立即退出
 set -e
 
+ARCH=$(uname -m)
 if [[ "$ARCH" == "arm64" ]]; then
     echo "Apple Silicon"
     export HOMEBREW_PREFIX="/opt/homebrew"

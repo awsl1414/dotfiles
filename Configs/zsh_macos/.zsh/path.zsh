@@ -1,3 +1,5 @@
+
+ARCH=$(uname -m)
 if [[ "$ARCH" == "arm64" ]]; then
     echo "Apple Silicon"
     export HOMEBREW_PREFIX="/opt/homebrew"
@@ -28,7 +30,7 @@ export PATH="$HOMEBREW_PREFIX/opt/rustup/bin:$PATH"
 # export PATH="$HOMEBREW_PREFIX/opt/curl/bin:$PATH"
 
 
-eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
+eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 
 export PATH="$HOME/.bun/bin:$PATH"
 
