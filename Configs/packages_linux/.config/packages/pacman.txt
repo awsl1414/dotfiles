@@ -1,56 +1,60 @@
+
+# keyrings
+archlinux-keyring
+archlinuxcn-keyring
+
+
 # font
 otf-firamono-nerd
 ttf-fira-code
 ttf-maplemono-nf-cn-unhinted
-adobe-source-han-sans-cn-fonts
 adobe-source-code-pro-fonts
+
+adobe-source-han-sans-cn-fonts
 adobe-source-han-serif-cn-fonts
 wqy-zenhei
+
 # noto-fonts
 # noto-fonts-cjk
 # noto-fonts-emoji
 
-axel
-ark
+
+# 输入法
 fcitx5-im
 fcitx5-rime
-kitty
-uv
-zed
-oculante
-zoxide
-ccache
-aria2
-ghostty
-vlc
-mpv
-btop
-rocm-smi-lib
-noise-suppression-for-voice
-flameshot
-fastfetch
-jq
-kdialog
-
-archlinux-keyring
-archlinuxcn-keyring
 rime-ice-pinyin-git
 
-# 显卡驱动（AMD）
-mesa
-lib32-mesa
-xf86-video-amdgpu
-vulkan-radeon
-lib32-vulkan-radeon
+# 多媒体
+pipewire-jack
+vlc
+mpv
+noise-suppression-for-voice
 
-steam
+# 工具
+fastfetch
+btop
+jq
+aria2
+axel
+ccache
 
+# 终端/shell
+kitty
+ghostty
+zoxide
 
-shellcheck
-golangci-lint
-
+# 开发
+uv
 go
 rustup
 deno
 nvm
 bun
+shellcheck
+golangci-lint
+
+# 图形
+lib32-mesa
+xf86-video-amdgpu
+vulkan-radeon
+lib32-vulkan-radeon

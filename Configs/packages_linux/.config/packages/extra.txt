@@ -10,3 +10,4 @@ fcitx5-theme-wechat
 zen-browser-bin
 wemeet-bin
 wechat-bin
+zed
