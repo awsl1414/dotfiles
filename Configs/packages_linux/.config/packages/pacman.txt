@@ -6,17 +6,15 @@ adobe-source-han-sans-cn-fonts
 adobe-source-code-pro-fonts
 adobe-source-han-serif-cn-fonts
 wqy-zenhei
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
+# noto-fonts
+# noto-fonts-cjk
+# noto-fonts-emoji
 
-plasma
 axel
 ark
 fcitx5-im
 fcitx5-rime
 kitty
-plasma
 uv
 zed
 oculante
@@ -47,7 +45,6 @@ lib32-vulkan-radeon
 
 steam
 
-fcitx5-im
 
 shellcheck
 golangci-lint
