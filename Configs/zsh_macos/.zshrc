@@ -117,8 +117,13 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# ============================================
+# 自定义配置
+# ============================================
 export ZSH_HOME="$HOME/.zsh"
 source $ZSH_HOME/functions.zsh
+source $ZSH_HOME/path.zsh
+source $ZSH_HOME/mirrors.zsh
 source $ZSH_HOME/aliases.zsh
 
 eval "$(zoxide init zsh)"
@@ -128,5 +133,4 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 
-# Added by Antigravity
-export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+

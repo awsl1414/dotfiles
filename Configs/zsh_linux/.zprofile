@@ -1,3 +1,6 @@
+# ============================================
+# 登录 Shell 配置
+# 此文件仅在登录 shell 时加载一次
+# ============================================
+
 export ZSH_HOME="$HOME/.zsh"
-source $ZSH_HOME/path.zsh
-source $ZSH_HOME/mirrors.zsh

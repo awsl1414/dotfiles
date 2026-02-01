@@ -1,4 +1,6 @@
-
+# ============================================
+# 架构检测
+# ============================================
 ARCH=$(uname -m)
 if [[ "$ARCH" == "arm64" ]]; then
     echo "Apple Silicon"
@@ -10,44 +12,65 @@ else
     echo "Unknown architecture: $ARCH"
 fi
 
-# go
+# ============================================
+# 开发工具 PATH
+# ============================================
+
+# Go
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+path_add "$GOPATH/bin"
 
-# cargo
-export PATH=$PATH:$HOME/.cargo/bin
+# Cargo (Rust)
+path_add "$HOME/.cargo/bin"
 
-# Created by `pipx` on 2025-08-23 13:15:59
-export PATH="$PATH:$HOME/.local/bin"
+# pipx
+path_add "$HOME/.local/bin"
 
-
+# NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
-[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
 
+# Rustup
+path_add "$HOMEBREW_PREFIX/opt/rustup/bin"
 
-export PATH="$HOMEBREW_PREFIX/opt/rustup/bin:$PATH"
-# export PATH="$HOMEBREW_PREFIX/opt/curl/bin:$PATH"
-
-
+# Homebrew
 eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 
-export PATH="$HOME/.bun/bin:$PATH"
+# Bun
+path_add "$HOME/.bun/bin"
 
+# ============================================
+# Homebrew 可选工具（条件加载）
+# ============================================
 if command -v brew >/dev/null 2>&1; then
-    
-    # 尝试获取 openjdk 路径，如果存在则配置
+    # OpenJDK
     JDK_PATH=$(brew --prefix openjdk 2>/dev/null)
     if [ -d "$JDK_PATH" ]; then
         export JAVA_HOME="$JDK_PATH"
-        export PATH="$JAVA_HOME/bin:$PATH"
+        path_add "$JAVA_HOME/bin"
     fi
 
-    # 尝试获取 kotlin 路径，如果存在则配置
+    # Kotlin
     KOTLIN_PATH=$(brew --prefix kotlin 2>/dev/null)
     if [ -d "$KOTLIN_PATH" ]; then
         export KOTLIN_HOME="$KOTLIN_PATH"
-        export PATH="$KOTLIN_PATH/bin:$PATH"
+        path_add "$KOTLIN_HOME/bin"
     fi
-    
 fi
+
+# ============================================
+# 其他工具
+# ============================================
+
+# Antigravity
+path_add "$HOME/.antigravity/antigravity/bin"
+
+# ZeroBrew
+export ZEROBREW_DIR="$HOME/.zerobrew"
+export ZEROBREW_BIN="$HOME/.local/bin"
+export ZEROBREW_ROOT=/opt/zerobrew
+export ZEROBREW_PREFIX=/opt/zerobrew/prefix
+export PKG_CONFIG_PATH="/opt/zerobrew/prefix/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
+path_add "$ZEROBREW_BIN"
+path_add "$ZEROBREW_PREFIX/bin"
