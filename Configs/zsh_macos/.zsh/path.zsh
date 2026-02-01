@@ -3,10 +3,10 @@
 # ============================================
 ARCH=$(uname -m)
 if [[ "$ARCH" == "arm64" ]]; then
-    echo "Apple Silicon"
+    # echo "Apple Silicon"
     export HOMEBREW_PREFIX="/opt/homebrew"
 elif [[ "$ARCH" == "x86_64" ]]; then
-    echo "Intel Chip"
+    # echo "Intel Chip"
     export HOMEBREW_PREFIX="/usr/local"
 else
     echo "Unknown architecture: $ARCH"
