@@ -66,11 +66,11 @@ fi
 # Antigravity
 path_add "$HOME/.antigravity/antigravity/bin"
 
-# ZeroBrew
-export ZEROBREW_DIR="$HOME/.zerobrew"
-export ZEROBREW_BIN="$HOME/.local/bin"
-export ZEROBREW_ROOT=/opt/zerobrew
-export ZEROBREW_PREFIX=/opt/zerobrew/prefix
-export PKG_CONFIG_PATH="/opt/zerobrew/prefix/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
-path_add "$ZEROBREW_BIN"
-path_add "$ZEROBREW_PREFIX/bin"
+# # ZeroBrew
+# export ZEROBREW_DIR="$HOME/.zerobrew"
+# export ZEROBREW_BIN="$HOME/.local/bin"
+# export ZEROBREW_ROOT=/opt/zerobrew
+# export ZEROBREW_PREFIX=/opt/zerobrew/prefix
+# export PKG_CONFIG_PATH="/opt/zerobrew/prefix/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
+# path_add "$ZEROBREW_BIN"
+# path_add "$ZEROBREW_PREFIX/bin"
