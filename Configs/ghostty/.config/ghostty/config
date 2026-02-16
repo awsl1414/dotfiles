@@ -93,3 +93,6 @@ cursor-style-blink = true
 # 光标粗细
 adjust-cursor-thickness = 2
 keybind = shift+enter=text:\x1b\r
+
+# Shell 集成功能（目前解决 ssh 乱码问题）
+shell-integration-features = ssh-env, ssh-terminfo
