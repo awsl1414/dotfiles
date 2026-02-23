@@ -12,30 +12,35 @@ else
     echo "Unknown architecture: $ARCH"
 fi
 
+# Homebrew
+eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+
 # ============================================
 # 开发工具 PATH
 # ============================================
-
-# Go
-export GOPATH=$HOME/go
-path_add "$GOPATH/bin"
-
-# Cargo (Rust)
-path_add "$HOME/.cargo/bin"
-
-# pipx
-path_add "$HOME/.local/bin"
 
 # NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
 
+
+# Go
+export GOPATH=$HOME/go
+path_add "$GOPATH/bin"
+
+
+# Cargo (Rust)
+path_add "$HOME/.cargo/bin"
+
+
+# pipx
+path_add "$HOME/.local/bin"
+
+
 # Rustup
 path_add "$HOMEBREW_PREFIX/opt/rustup/bin"
 
-# Homebrew
-eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 
 # Bun
 path_add "$HOME/.bun/bin"
