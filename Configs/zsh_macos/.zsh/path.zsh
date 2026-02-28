@@ -19,11 +19,6 @@ eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 # 开发工具 PATH
 # ============================================
 
-# NVM (Node Version Manager)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"
-[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
-
 
 # Go
 export GOPATH=$HOME/go
@@ -63,6 +58,12 @@ if command -v brew >/dev/null 2>&1; then
         path_add "$KOTLIN_HOME/bin"
     fi
 fi
+
+# NVM (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
+
 
 # ============================================
 # 其他工具
