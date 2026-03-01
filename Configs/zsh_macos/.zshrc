@@ -133,4 +133,5 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 
-
+# OpenClaw Completion
+source "/Users/logan/.openclaw/completions/openclaw.zsh"
