@@ -50,14 +50,15 @@ window-padding-color = "extend"
 shell-integration = "zsh"
 
 # Shell 集成特性 (修复：同样使用纯字符串与逗号分隔)
-shell-integration-features = "no-sudo,cursor,title"
+shell-integration-features = "no-sudo,cursor,title,ssh-env,ssh-terminfo"
 
 window-subtitle = "working-directory"
 image-storage-limit = 335544320
 
 
 # --- macOS 平台专项推荐 ---
-macos-titlebar-style = "native"
+# macos-titlebar-style = "native"
+macos-titlebar-style = "tabs"
 macos-option-as-alt = "left"
 macos-non-native-fullscreen = true
 macos-window-shadow = true
@@ -88,5 +89,4 @@ keybind = "cmd+z=toggle_split_zoom"
 keybind = "cmd+1=goto_tab:1"
 keybind = "cmd+2=goto_tab:2"
 keybind = "cmd+3=goto_tab:3"
-# Shell 集成功能（目前解决 ssh 乱码问题）
-shell-integration-features = ssh-env, ssh-terminfo
+
