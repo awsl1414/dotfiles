@@ -1,98 +1,92 @@
-# Ghostty 配置
-# 不能在同一行写注释
+# --- 基础视觉与主题 ---
+theme = "Catppuccin Macchiato"
 
-# 主题
-theme = Catppuccin Macchiato
+# 原生滚动条
+# 可选值: "system", "visible", "hidden"
+scrollbar = "system"
+
+# 现代模糊渲染与透明度
+background-opacity = 0.9
+background-blur = true
 
 
-# 字体配置
-
-# font-size = 12.5
-
+# --- 字体配置 ---
 font-family = "Maple Mono NF CN"
-# font-family-bold = "Maple Mono NF CN Bold"
 font-family-italic = "Maple Mono NF CN Italic"
 font-family-bold-italic = "Maple Mono NF CN Bold Italic"
 
-
-# 当字体本身没有 bold/italic 时，是否由 Ghostty 合成（默认 true）
-# 可显式设置为 true/false 或用 "no-bold,no-italic" 之类的组合来禁用特定合成样式
+# 禁用合成样式
 font-synthetic-style = false
 
-
-# --- OpenType 字体特性（font-feature） ---
-# Maple Mono 含有编程连字（ligatures）与 Nerd 图标，通常希望：
-#  - 保持常规上下文连字（calt）以支持常见编程连字
-#  - 禁用离散连字（dlig）或部分不想要的 ligatures 时可显式关闭
-# 语法参考：可以用 feat / +feat / -feat / feat=1 / "feat" 等形式，支持逗号分隔多个特性。详见官方。
-font-feature = "calt, +liga, -dlig"
-
-# 关闭关闭窗口 / 关闭程序的确认弹窗
-confirm-close-surface = false
-
-# 回滚缓冲（以字节为单位）
-# 例如 1048576 表示 1 MiB 回滚缓冲
-scrollback-limit = 3145728
-
-# 滚动行为
-scroll-to-bottom = keystroke
-
-# 最小对比度（前景/背景）
-minimum-contrast = 1.1
-
-# 光标与光标覆盖文字颜色
-cursor-color = cell-foreground
-cursor-text = cell-foreground
-
-# 工作目录设置
-working-directory = home
-window-inherit-working-directory = false
-
-# 图像存储限制（以字节为单位）
-# 例如 335544320 表示 320 MiB
-image-storage-limit = 335544320
-
-# 钟铃（可选）
-# bell-audio-path = "/home/user/.config/ghostty/bell.wav"
-# bell-audio-volume = 0.5
-
-# Shell 集成（按需设置；示例）
-shell-integration = zsh
-
-# 窗口子标题（仅在支持的平台上有效）
-window-subtitle = working-directory
-
-# 自定义着色器（按需）
-# custom-shader = "/path/to/my-shader.glsl"
-
-# 背景透明度（按需）
-# background-opacity = 0.9
-
-# vsync（按需）
-# window-vsync = true
+# 字体特性 (修复：使用逗号分隔的字符串以完美匹配 Ghostty 解析器)
+font-feature = "calt,liga,-dlig"
 
 
-# 水平（左右）边距，以 “点”（points）为单位  
-window-padding-x = 8, 12  
-
-# 垂直（上下）边距，以 “点” 为单位  
-window-padding-y = 8, 12  
-
-# 是否平衡多余 padding（当内容和边框尺寸不整除时）  
-window-padding-balance = true  
-
-# 边距区域 (padding) 的颜色，可以是背景或扩展最近单元格背景  
-window-padding-color = extend  
-
-# 下划线光标
-cursor-style = underline
-
-# 光标闪烁
+# --- 光标与交互 ---
+cursor-style = "underline"
 cursor-style-blink = true
 
-# 光标粗细
+# 颜色配置：确保文字在光标下清晰可见
+cursor-color = "cell-foreground"
+cursor-text = "cell-background"
 adjust-cursor-thickness = 2
-keybind = shift+enter=text:\x1b\r
 
+# 交互行为
+copy-on-select = true
+scroll-to-bottom = "keystroke"
+confirm-close-surface = false
+focus-follows-mouse = true
+mouse-hide-while-typing = true
+
+
+# --- 窗口布局优化 ---
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+window-padding-color = "extend"
+
+
+# --- 系统集成与优化 ---
+shell-integration = "zsh"
+
+# Shell 集成特性 (修复：同样使用纯字符串与逗号分隔)
+shell-integration-features = "no-sudo,cursor,title"
+
+window-subtitle = "working-directory"
+image-storage-limit = 335544320
+
+
+# --- macOS 平台专项推荐 ---
+macos-titlebar-style = "native"
+macos-option-as-alt = "left"
+macos-non-native-fullscreen = true
+macos-window-shadow = true
+# 推荐：在系统 dock 栏使用与主题相关的动态图标效果
+macos-icon = "official"
+
+
+# --- Linux 平台专项推荐 ---
+# 推荐：开启原生窗口装饰 (在使用 GNOME 时体验更好；若用 i3/Sway 建议设为 false)
+window-decoration = true
+# 推荐：利用 Linux 内核特性优化终端资源分配，避免高负载下卡顿
+linux-cgroup = "always"
+
+
+# --- 1.3.0 快捷键与 Quick Terminal (全局下拉终端) ---
+# 全局唤起快捷键 (类似 Quake 模式)
+keybind = "global:cmd+shift+g=toggle_quick_terminal"
+quick-terminal-position = "top"
+quick-terminal-animation-duration = 0.2
+
+# 生产力快捷键
+keybind = "cmd+f=start_search"
+keybind = "cmd+d=new_split:right"
+keybind = "cmd+shift+d=new_split:down"
+keybind = "cmd+z=toggle_split_zoom"
+
+# 标签页跳转
+keybind = "cmd+1=goto_tab:1"
+keybind = "cmd+2=goto_tab:2"
+keybind = "cmd+3=goto_tab:3"
 # Shell 集成功能（目前解决 ssh 乱码问题）
 shell-integration-features = ssh-env, ssh-terminfo
