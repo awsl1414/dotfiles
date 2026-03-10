@@ -1,43 +1,43 @@
+# --- Ghostty 1.3.0  ---
+# 更新日期：2026-03-10
+
 # --- 基础视觉与主题 ---
 theme = "Catppuccin Macchiato"
 
-# 原生滚动条
-# 可选值: "system", "visible", "hidden"
+# 原生滚动条（1.3.0 已完美支持）
 scrollbar = "system"
 
-# 现代模糊渲染与透明度
+# 现代模糊渲染与透明度（1.3.0 升级为 macOS 原生液态玻璃效果，Linux 自动忽略）
 background-opacity = 0.9
-background-blur = true
-
+# 推荐值：macos-glass-regular / macos-glass-clear
+background-blur = "macos-glass-regular"
 
 # --- 字体配置 ---
 font-family = "Maple Mono NF CN"
 font-family-italic = "Maple Mono NF CN Italic"
 font-family-bold-italic = "Maple Mono NF CN Bold Italic"
 
-# 禁用合成样式
 font-synthetic-style = false
-
-# 字体特性 (修复：使用逗号分隔的字符串以完美匹配 Ghostty 解析器)
 font-feature = "calt,liga,-dlig"
-
 
 # --- 光标与交互 ---
 cursor-style = "underline"
 cursor-style-blink = true
 
-# 颜色配置：确保文字在光标下清晰可见
 cursor-color = "cell-foreground"
 cursor-text = "cell-background"
 adjust-cursor-thickness = 2
 
 # 交互行为
 copy-on-select = true
-scroll-to-bottom = "keystroke"
+# 1.3.0 增强：输出时也自动滚动到底
+scroll-to-bottom = "keystroke,output"
 confirm-close-surface = false
 focus-follows-mouse = true
 mouse-hide-while-typing = true
 
+# 1.3.0 新增：最小对比度保护（防止浅色主题文字隐形）
+minimum-contrast = 4.5
 
 # --- 窗口布局优化 ---
 window-padding-x = 10
@@ -45,36 +45,36 @@ window-padding-y = 10
 window-padding-balance = true
 window-padding-color = "extend"
 
+# 1.3.0 新增：分屏缩放保持 + 工作目录继承
+split-preserve-zoom = "navigation"
+window-inherit-working-directory = true
+tab-inherit-working-directory = true
+split-inherit-working-directory = true
 
 # --- 系统集成与优化 ---
 shell-integration = "zsh"
-
-# Shell 集成特性 (修复：同样使用纯字符串与逗号分隔)
 shell-integration-features = "no-sudo,cursor,title,ssh-env,ssh-terminfo"
 
 window-subtitle = "working-directory"
 image-storage-limit = 335544320
 
+# 1.3.0 重磅新特性：命令完成桌面通知（长命令如 build、deploy 后自动提醒）
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = no-bell,notify
+notify-on-command-finish-after = 30s
 
-# --- macOS 平台专项推荐 ---
-# macos-titlebar-style = "native"
+# --- macOS 平台专项 ---
 macos-titlebar-style = "tabs"
 macos-option-as-alt = "left"
 macos-non-native-fullscreen = true
 macos-window-shadow = true
-# 推荐：在系统 dock 栏使用与主题相关的动态图标效果
 macos-icon = "official"
 
-
-# --- Linux 平台专项推荐 ---
-# 推荐：开启原生窗口装饰 (在使用 GNOME 时体验更好；若用 i3/Sway 建议设为 false)
+# --- Linux 平台专项（Bavaria 用户推荐）---
 window-decoration = true
-# 推荐：利用 Linux 内核特性优化终端资源分配，避免高负载下卡顿
 linux-cgroup = "always"
 
-
-# --- 1.3.0 快捷键与 Quick Terminal (全局下拉终端) ---
-# 全局唤起快捷键 (类似 Quake 模式)
+# --- 1.3.0 快捷键与 Quick Terminal ---
 keybind = "global:cmd+shift+g=toggle_quick_terminal"
 quick-terminal-position = "top"
 quick-terminal-animation-duration = 0.2
@@ -89,4 +89,3 @@ keybind = "cmd+z=toggle_split_zoom"
 keybind = "cmd+1=goto_tab:1"
 keybind = "cmd+2=goto_tab:2"
 keybind = "cmd+3=goto_tab:3"
-
