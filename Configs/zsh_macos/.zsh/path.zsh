@@ -80,3 +80,5 @@ path_add "$HOME/.antigravity/antigravity/bin"
 # export PKG_CONFIG_PATH="/opt/zerobrew/prefix/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
 # path_add "$ZEROBREW_BIN"
 # path_add "$ZEROBREW_PREFIX/bin"
+
+export TUCKR_HOME="$HOME/.dotfiles"

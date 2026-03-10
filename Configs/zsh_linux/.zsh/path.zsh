@@ -14,3 +14,6 @@ path_add "$HOME/.bun/bin"
 
 # pipx
 path_add "$HOME/.local/bin"
+
+
+export TUCKR_HOME="$HOME/.dotfiles"
