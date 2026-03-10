@@ -82,3 +82,6 @@ path_add "$HOME/.antigravity/antigravity/bin"
 # path_add "$ZEROBREW_PREFIX/bin"
 
 export TUCKR_HOME="$HOME/.dotfiles"
+
+# Added by Obsidian
+path_add "/Applications/Obsidian.app/Contents/MacOS"
