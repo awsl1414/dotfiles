@@ -85,3 +85,5 @@ export TUCKR_HOME="$HOME/.dotfiles"
 
 # Added by Obsidian
 path_add "/Applications/Obsidian.app/Contents/MacOS"
+
+path_add "$HOMEBREW_PREFIX/opt/curl/bin"
