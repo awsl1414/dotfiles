@@ -9,3 +9,6 @@ export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.bfsu.edu.cn/git/homebrew/brew.git"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.bfsu.edu.cn/homebrew-bottles"
 export HOMEBREW_API_DOMAIN="https://mirrors.bfsu.edu.cn/homebrew-bottles/api"
+
+# Flutter
+export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
