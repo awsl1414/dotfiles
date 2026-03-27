@@ -17,3 +17,7 @@ path_add "$HOME/.local/bin"
 
 
 export TUCKR_HOME="$HOME/.dotfiles"
+
+
+# Fnm
+eval "$(fnm env --use-on-cd --shell zsh)"

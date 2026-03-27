@@ -81,3 +81,6 @@ export TUCKR_HOME="$HOME/.dotfiles"
 path_add "/Applications/Obsidian.app/Contents/MacOS"
 
 path_add "$HOMEBREW_PREFIX/opt/curl/bin"
+
+# Fnm
+eval "$(fnm env --use-on-cd --shell zsh)"
