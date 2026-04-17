@@ -20,22 +20,15 @@ eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 # ============================================
 
 
+# Rust rustup-init
+source "$HOME/.cargo/env"
+
 # Go
 export GOPATH=$HOME/go
 path_add "$GOPATH/bin"
 
-
-# Cargo (Rust)
-path_add "$HOME/.cargo/bin"
-
-
 # pipx
 path_add "$HOME/.local/bin"
-
-
-# Rustup
-path_add "$HOMEBREW_PREFIX/opt/rustup/bin"
-
 
 # Bun
 path_add "$HOME/.bun/bin"
