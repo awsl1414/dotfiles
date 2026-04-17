@@ -135,6 +135,3 @@ compinit
 
 
 alias claude-mem='bun "/Users/logan/.claude/plugins/cache/thedotmack/claude-mem/10.5.2/scripts/worker-service.cjs"'
-
-# OpenClaw Completion
-source "/Users/logan/.openclaw/completions/openclaw.zsh"
