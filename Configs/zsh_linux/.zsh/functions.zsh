@@ -12,8 +12,8 @@ pxy() {
                 echo "proxy off"
                 return
             fi
-            echo "HTTP  $http_proxy"
-            echo "SOCKS $all_proxy"
+            echo "  HTTP(S) $http_proxy"
+            echo "  SOCKS   $all_proxy"
             curl -Is --connect-timeout 2 --proxy "$http_proxy" https://www.google.com >/dev/null 2>&1 \
                 && echo "connect ok" || echo "connect fail"
             ;;
@@ -37,7 +37,9 @@ pxy() {
             export http_proxy="$http_url" https_proxy="$http_url"
             export HTTP_PROXY="$http_url" HTTPS_PROXY="$http_url"
             export all_proxy="$socks_url" ALL_PROXY="$socks_url"
-            echo "proxy on → $http_url"
+            echo "proxy on"
+            echo "  HTTP(S) $http_url"
+            echo "  SOCKS   $socks_url"
             ;;
     esac
 }
