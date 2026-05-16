@@ -1,45 +1,43 @@
 
-proxy() {
-    # 默认 HOST 为 localhost，如果传入了第二个参数则使用第二个参数
-    local HOST="${2:-localhost}"
-    local PORT="7897"
-    local http_proxy_url="http://$HOST:$PORT"
-    local socks_proxy_url="socks5://$HOST:$PORT"
+pxy() {
+    local DEFAULT_PORT="7897"
 
     case "$1" in
-        "on")
-            export http_proxy="$http_proxy_url"
-            export https_proxy="$http_proxy_url"
-            export HTTP_PROXY="$http_proxy_url"
-            export HTTPS_PROXY="$http_proxy_url"
-            export all_proxy="$socks_proxy_url"
-            export ALL_PROXY="$socks_proxy_url"
-
-            echo "🔌 代理已开启"
-            echo "    Host:  $HOST"
-            echo "    HTTP:  $http_proxy_url"
-            echo "    SOCKS: $socks_proxy_url"
-            ;;
-        "off")
+        off)
             unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
-            echo "🔓 代理已关闭"
+            echo "proxy off"
             ;;
-        "status")
-            echo "当前代理状态:"
-            echo "  HTTP/HTTPS: ${http_proxy:-未设置}"
-            echo "  SOCKS:      ${all_proxy:-未设置}"
-            # 顺便检测一下网络连通性
-            if [ -n "$http_proxy" ]; then
-                echo -n "  连通性测试: "
-                curl -Is --connect-timeout 2 https://www.google.com | grep -q "HTTP" && echo "✅ 成功" || echo "❌ 失败"
+        st)
+            if [ -z "$http_proxy" ]; then
+                echo "proxy off"
+                return
             fi
+            echo "HTTP  $http_proxy"
+            echo "SOCKS $all_proxy"
+            curl -Is --connect-timeout 2 --proxy "$http_proxy" https://www.google.com >/dev/null 2>&1 \
+                && echo "connect ok" || echo "connect fail"
+            ;;
+        -h|--help)
+            echo "usage: pxy [off|st|[host]:port]"
+            echo "  (none)       enable proxy (localhost:7897)"
+            echo "  <host>       enable proxy to <host>:7897"
+            echo "  <host>:port  enable proxy to <host>:<port>"
+            echo "  :<port>      enable proxy to localhost:<port>"
+            echo "  off          disable proxy"
+            echo "  st           show status & connectivity"
             ;;
         *)
-            echo "终端代理使用方法:"
-            echo "  proxy on [host] - 开启代理 (默认 localhost)"
-            echo "  proxy off       - 关闭代理"
-            echo "  proxy status    - 查看状态"
-            echo "示例: proxy on 192.168.1.5"
+            local target="${1:-localhost}"
+            # 如果没有冒号，追加默认端口
+            if [[ "$target" != *:* ]]; then
+                target="$target:$DEFAULT_PORT"
+            fi
+            local http_url="http://$target"
+            local socks_url="socks5://$target"
+            export http_proxy="$http_url" https_proxy="$http_url"
+            export HTTP_PROXY="$http_url" HTTPS_PROXY="$http_url"
+            export all_proxy="$socks_url" ALL_PROXY="$socks_url"
+            echo "proxy on → $http_url"
             ;;
     esac
 }
