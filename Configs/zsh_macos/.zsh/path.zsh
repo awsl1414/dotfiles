@@ -37,8 +37,16 @@ path_add "$HOME/.bun/bin"
 # Homebrew 可选工具（条件加载）
 # ============================================
 if command -v brew >/dev/null 2>&1; then
+
     # OpenJDK
-    JDK_PATH=$(brew --prefix openjdk 2>/dev/null)
+    jdk=$(
+        brew list --formula |
+        grep '^openjdk' |
+        sort -V |
+        tail -1
+    )
+
+    JDK_PATH="$(brew --prefix "$jdk")/libexec/openjdk.jdk/Contents/Home"
     if [ -d "$JDK_PATH" ]; then
         export JAVA_HOME="$JDK_PATH"
         path_add "$JAVA_HOME/bin"
