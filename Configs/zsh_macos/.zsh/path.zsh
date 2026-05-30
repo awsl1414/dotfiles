@@ -58,6 +58,22 @@ if command -v brew >/dev/null 2>&1; then
         export KOTLIN_HOME="$KOTLIN_PATH"
         path_add "$KOTLIN_HOME/bin"
     fi
+
+    # Android SDK
+    # ANDROID_HOME 是旧版的 SDK 路径，ANDROID_SDK_ROOT 是新版的 SDK 路径
+    export ANDROID_HOME="$(brew --prefix)/share/android-commandlinetools"
+    if [ -d "$ANDROID_HOME" ]; then
+        export ANDROID_SDK_ROOT="$ANDROID_HOME"
+        path_add "$ANDROID_HOME/cmdline-tools/latest/bin"
+        path_add "$ANDROID_HOME/platform-tools"
+    fi
+
+    # Android NDK
+    export ANDROID_NDK_HOME="$(brew --prefix)/share/android-ndk"
+    if [ -d "$ANDROID_NDK_HOME" ]; then
+        path_add "$ANDROID_NDK_HOME"
+    fi
+
 fi
 
 # ============================================
