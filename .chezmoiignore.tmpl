@@ -6,6 +6,8 @@
 .config/environment.d/
 .config/pipewire/
 .config/plasma/
-.config/packages/
 .local/
 {{- end }}
+
+# 包清单仅作为数据源，不部署到 home 目录
+packages/

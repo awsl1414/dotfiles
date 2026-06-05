@@ -3,8 +3,7 @@
 
 # 判断是否为 Arch Linux
 if [[ -f /etc/arch-release ]]; then
-    XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-~/.config}
-    packages_dir="$XDG_CONFIG_HOME/packages"
+    packages_dir="{{ .chezmoi.sourceDir }}/packages"
 
     pacman_file="$packages_dir/pacman.txt"
 

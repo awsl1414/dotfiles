@@ -1,3 +1,10 @@
 user:
   email: "3030994569@qq.com"
-  name: "awsl1414"
+  name: "logan"
+
+mirrors:
+  npm: "https://registry.npmmirror.com"
+  go: "https://goproxy.cn,direct"
+  rust: "https://rsproxy.cn"
+  node: "https://mirrors.bfsu.edu.cn/nodejs-release"
+  uv: "https://mirrors.cernet.edu.cn/pypi/web/simple"
