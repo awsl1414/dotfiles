@@ -5,9 +5,15 @@
 .config/fcitx5/
 .config/environment.d/
 .config/pipewire/
-.config/plasma/
 .local/
 {{- end }}
+
+{{- if not (env "KDE_SESSION_VERSION")  }}
+.config/dolphinrc
+.config/ktimezonedrc
+.config/mimeapps.list
+.config/plasma-localerc
+{{- end}}
 
 # 包清单仅作为数据源，不部署到 home 目录
 packages/

@@ -6,6 +6,7 @@ fcitx5-skin-fluentlight-git
 fcitx5-skin-fluentdark-git
 fcitx5-themes-candlelight
 fcitx5-theme-wechat
+catppuccin-fcitx5-git
 
 zen-browser-bin
 wemeet-bin
