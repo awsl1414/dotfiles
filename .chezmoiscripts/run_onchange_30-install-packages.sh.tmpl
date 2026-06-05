@@ -5,15 +5,38 @@
 if [[ -f /etc/arch-release ]]; then
     packages_dir="{{ .chezmoi.sourceDir }}/packages"
 
+    # pacman (官方仓库)
     pacman_file="$packages_dir/pacman.txt"
-
     if [[ -f "$pacman_file" ]]; then
         echo "正在从 pacman.txt 安装官方仓库包..."
         grep -v '^#' "$pacman_file" | xargs sudo pacman -S --needed --noconfirm
     else
         echo "警告: $pacman_file 不存在"
     fi
+
+    # AUR (paru)
+    aur_file="$packages_dir/aur.txt"
+    if [[ -f "$aur_file" ]]; then
+        if command -v paru &>/dev/null; then
+            echo "正在从 aur.txt 安装 AUR 包..."
+            grep -v '^#' "$aur_file" | xargs paru -S --needed --noconfirm
+        else
+            echo "警告: paru 未安装，跳过 AUR 包安装"
+        fi
+    fi
 fi
 
-echo "包管理器安装完成。"
+echo "包安装完成。"
+{{- else if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+brewfile="{{ .chezmoi.sourceDir }}/packages/Brewfile"
+if [[ -f "$brewfile" ]]; then
+    echo "正在通过 Brewfile 安装 macOS 包..."
+    brew bundle --file="$brewfile"
+else
+    echo "警告: $brewfile 不存在"
+fi
+
+echo "包安装完成。"
 {{- end -}}
