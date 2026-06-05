@@ -1,50 +1,91 @@
-# 个人的配置文件
+# dotfiles
 
-## 使用说明
+使用 [Chezmoi](https://www.chezmoi.io/) 管理的个人配置文件，支持 Linux (Arch) 和 macOS。
 
-### linux
+## 快速开始
 
-### macos
+### 安装 Chezmoi
 
-0、安装 xcode
+**macOS:**
 ```bash
-xcode-select --install
+brew install chezmoi
 ```
 
-1、安装 brew
+**Arch Linux:**
 ```bash
-# 镜像站安装
-export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.bfsu.edu.cn/git/homebrew/brew.git"
-git clone --depth=1 https://mirrors.bfsu.edu.cn/git/homebrew/install.git brew-install
-/bin/bash brew-install/install.sh
-rm -rf brew-install
-
-# 官方安装脚本
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo pacman -S chezmoi
 ```
 
-2、安装 rust
+### 从本仓库初始化
+
 ```bash
-brew install rustup
+chezmoi init --apply https://github.com/awsl1414/dotfiles.git
 ```
 
-2.1 初始化 rustup
+初始化时会提示输入 Email 地址，用于 gitconfig 等模板。
+
+### 在新机器上恢复配置
+
 ```bash
-rustup-init
+chezmoi init --apply --verbose https://github.com/awsl1414/dotfiles.git
 ```
 
-3、安装 tuckr
+## 日常使用
+
 ```bash
-cargo install --git https://github.com/RaphGL/Tuckr.git
+# 编辑配置文件（在源目录中）
+chezmoi edit ~/.zshrc
+
+# 查看变更
+chezmoi diff
+
+# 应用变更
+chezmoi apply
+
+# 从本机更新到源目录
+chezmoi add ~/.zshrc
+
+# 从远程拉取最新并应用
+chezmoi update
 ```
 
-4、恢复配置
-```bash
-cd Configs
+## 管理的配置
 
-# 恢复所有配置
-tuckr add \* -f
+| 配置 | 跨平台 | 说明 |
+|------|--------|------|
+| zsh | ✅ | .zshrc / aliases / functions / path (模板合并) |
+| git | ✅ | .gitconfig (模板化 email/name) |
+| ghostty | ✅ | 终端配置 |
+| zed | ✅ | 编辑器配置 |
+| kitty | ✅ | 终端配置 (含平台快捷键) |
+| rust | ✅ | cargo config |
+| python | ✅ | uv 镜像配置 |
+| front | ✅ | npm/yarn 镜像 |
+| fcitx5 | Linux | 输入法 |
+| pipewire | Linux | 音频降噪 |
+| plasma | Linux | KDE6 桌面 |
+| packages | Linux | Arch 包列表 |
 
-# 执行所有恢复脚本
-tuckr set \*
+## 目录结构
+
 ```
+├── .chezmoidata.yaml          # 个人数据变量
+├── .chezmoi.toml.tmpl         # chezmoi 配置模板
+├── .chezmoiignore.tmpl        # 平台过滤规则
+├── dot_gitconfig.tmpl         # ~/.gitconfig
+├── dot_zshrc.tmpl             # ~/.zshrc
+├── dot_zsh/                   # ~/.zsh/ (aliases, functions, path, mirrors)
+├── dot_cargo/                 # ~/.cargo/
+├── private_dot_config/        # ~/.config/ (ghostty, zed, kitty, ...)
+├── private_dot_local/         # ~/.local/ (fcitx5 rime)
+└── .chezmoiscripts/           # 脚本 (安装插件、工具、包)
+```
+
+## 从 Tuckr 迁移
+
+本仓库于 2026-06 从 Tuckr 迁移至 Chezmoi，主要变化：
+
+- 包管理 → 模板 + 条件判断
+- Hooks → `.chezmoiscripts/` (run_once / run_onchange)
+- Linux/Mac 分离 → 单一配置 + `{{ if eq .chezmoi.os }}` 模板
+- 硬编码个人信息 → `.chezmoidata.yaml` 变量化

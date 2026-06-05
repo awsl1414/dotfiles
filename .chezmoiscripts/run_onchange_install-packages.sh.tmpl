@@ -1,0 +1,20 @@
+{{- if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+# 判断是否为 Arch Linux
+if [[ -f /etc/arch-release ]]; then
+    XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-~/.config}
+    packages_dir="$XDG_CONFIG_HOME/packages"
+
+    pacman_file="$packages_dir/pacman.txt"
+
+    if [[ -f "$pacman_file" ]]; then
+        echo "正在从 pacman.txt 安装官方仓库包..."
+        grep -v '^#' "$pacman_file" | xargs sudo pacman -S --needed --noconfirm
+    else
+        echo "警告: $pacman_file 不存在"
+    fi
+fi
+
+echo "包管理器安装完成。"
+{{- end -}}

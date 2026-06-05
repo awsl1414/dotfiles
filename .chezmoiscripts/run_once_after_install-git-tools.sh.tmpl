@@ -1,0 +1,32 @@
+#!/bin/bash
+set -e
+{{- if eq .chezmoi.os "darwin" }}
+ARCH=$(uname -m)
+if [[ "$ARCH" == "arm64" ]]; then
+    export HOMEBREW_PREFIX="/opt/homebrew"
+elif [[ "$ARCH" == "x86_64" ]]; then
+    export HOMEBREW_PREFIX="/usr/local"
+fi
+
+if ! command -v brew &> /dev/null; then
+    echo "Homebrew 未安装，正在安装..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+eval "$("${HOMEBREW_PREFIX}/bin/brew" shellenv)"
+
+if ! command -v bun &> /dev/null; then
+    echo "bun 未安装，正在使用 Homebrew 安装..."
+    brew install oven-sh/bun/bun
+fi
+{{- else if eq .chezmoi.os "linux" }}
+sudo pacman -Sy --needed --noconfirm bun
+{{- end }}
+
+if ! command -v commitizen &> /dev/null; then
+    echo "安装 commitizen 和 cz-git..."
+    bun i -g cz-git commitizen
+else
+    echo "commitizen 已安装。"
+fi
+
+echo "环境设置完成。"

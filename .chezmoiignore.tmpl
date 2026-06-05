@@ -1,0 +1,11 @@
+{{- if ne .chezmoi.os "linux" }}
+.makepkg.conf
+.zsh/mirrors.zsh
+.config/go/
+.config/fcitx5/
+.config/environment.d/
+.config/pipewire/
+.config/plasma/
+.config/packages/
+.local/
+{{- end }}

@@ -1,0 +1,9 @@
+{{- $email := promptStringOnce . "email" "Email address" -}}
+
+sourceDir = "~/.config/dotfiles"
+
+[data]
+    email = {{ $email | quote }}
+
+[diff]
+    exclude = ["scripts"]
