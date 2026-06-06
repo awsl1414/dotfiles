@@ -1,4 +1,5 @@
 [Added Associations]
+application/json=dev.zed.Zed.desktop;
 application/pdf=zen.desktop;
 audio/aac=mpv.desktop;
 audio/mp4=mpv.desktop;
@@ -27,12 +28,14 @@ image/png=oculante.desktop;
 image/webp=oculante.desktop;
 image/x-icns=oculante.desktop;
 inode/directory=org.kde.dolphin.desktop;code.desktop;
+text/plain=dev.zed.Zed.desktop;
 x-scheme-handler/clash=clash-verge.desktop;
 x-scheme-handler/clash-verge=clash-verge.desktop;
 x-scheme-handler/http=zen.desktop;zen-browser.desktop;
 x-scheme-handler/https=zen.desktop;zen-browser.desktop;
 
 [Default Applications]
+application/json=dev.zed.Zed.desktop;
 application/pdf=zen.desktop;
 audio/aac=mpv.desktop;
 audio/mp4=mpv.desktop;
@@ -61,9 +64,10 @@ image/png=oculante.desktop;
 image/webp=oculante.desktop;
 image/x-icns=oculante.desktop;
 inode/directory=org.kde.dolphin.desktop;
+text/plain=dev.zed.Zed.desktop;
+x-scheme-handler/ccswitch=cc-switch-handler.desktop
 x-scheme-handler/clash=clash-verge.desktop;
 x-scheme-handler/clash-verge=clash-verge.desktop;
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 x-scheme-handler/http=zen.desktop;
 x-scheme-handler/https=zen.desktop;
-x-scheme-handler/claude-cli=claude-code-url-handler.desktop
-x-scheme-handler/ccswitch=cc-switch-handler.desktop
