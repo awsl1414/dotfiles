@@ -61,5 +61,5 @@ path_add "$HOMEBREW_PREFIX/opt/curl/bin"
 # ============================================
 # 工具初始化（所有 path_add 之后）
 # ============================================
-eval "$(fnm env --use-on-cd --shell zsh)"   # Node.js (fnm) — multishell 路径需在 PATH 最前
+eval "$(fnm env --use-on-cd --shell zsh)" 2>/dev/null  # Node.js (fnm)
 eval "$(zoxide init zsh)"                    # 智能目录跳转
