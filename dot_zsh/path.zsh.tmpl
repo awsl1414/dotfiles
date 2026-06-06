@@ -60,10 +60,19 @@ path_add "$HOMEBREW_PREFIX/opt/curl/bin"
 
 # ============================================
 # 工具初始化（所有 path_add 之后）
-# &>/dev/null 抑制所有输出，兼容 p10k instant prompt
+# 捕获输出并延迟到第一个 precmd 后打印，兼容 p10k instant prompt
 # 新增工具只需在此块内添加 eval 即可
 # ============================================
+typeset -g _init_buf="${XDG_RUNTIME_DIR:-/tmp}/zsh_init_$$"
 {
     eval "$(fnm env --use-on-cd --shell zsh)"
     eval "$(zoxide init zsh)"
-} &>/dev/null
+} &>"$_init_buf"
+
+_print_init_output() {
+    [[ -s "$_init_buf" ]] && cat "$_init_buf"
+    rm -f "$_init_buf" 2>/dev/null
+    unset _init_buf
+    add-zsh-hook -d precmd _print_init_output
+}
+add-zsh-hook precmd _print_init_output
