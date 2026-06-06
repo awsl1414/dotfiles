@@ -38,8 +38,6 @@ source $ZSH_HOME/aliases.zsh
 {{- if eq .chezmoi.os "linux" }}
 source $ZSH_HOME/mirrors.zsh
 {{- end }}
-
-eval "$(zoxide init zsh)"
 {{- if eq .chezmoi.os "darwin" }}
 
 # Docker CLI completions

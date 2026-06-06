@@ -4,16 +4,11 @@ path_add "$GOPATH/bin"            # Go
 path_add "$HOME/.local/bin"       # pipx / 用户脚本
 path_add "$HOME/.bun/bin"         # Bun
 
-eval "$(fnm env --use-on-cd --shell zsh)"  # Node.js (fnm)
-
 {{- if eq .chezmoi.os "linux" }}
-
-
 path_add "$HOME/.cargo/bin"       # Rust
 {{- end }}
 
 {{- if eq .chezmoi.os "darwin" }}
-
 
 # Homebrew
 ARCH=$(uname -m)
@@ -54,9 +49,7 @@ if command -v brew >/dev/null 2>&1; then
 
     # Android NDK
     export ANDROID_NDK_HOME="$(brew --prefix)/share/android-ndk"
-    if [ -d "$ANDROID_NDK_HOME" ]; then
-        path_add "$ANDROID_NDK_HOME"
-    fi
+    path_add "$ANDROID_NDK_HOME"
 fi
 
 # 其他工具
@@ -64,3 +57,9 @@ path_add "$HOME/.antigravity/antigravity/bin"
 path_add "/Applications/Obsidian.app/Contents/MacOS"
 path_add "$HOMEBREW_PREFIX/opt/curl/bin"
 {{- end }}
+
+# ============================================
+# 工具初始化（所有 path_add 之后）
+# ============================================
+eval "$(fnm env --use-on-cd --shell zsh)"   # Node.js (fnm) — multishell 路径需在 PATH 最前
+eval "$(zoxide init zsh)"                    # 智能目录跳转

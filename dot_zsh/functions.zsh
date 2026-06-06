@@ -59,10 +59,11 @@ git_branch() {
     git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-# 智能添加到 PATH（自动去重）
+# 智能添加到 PATH（自动去重，跳过不存在的目录）
 # 用法: path_add /path/to/bin
 path_add() {
     local argpath="$1"
+    [[ -d "$argpath" ]] || return 0
     case ":${PATH}:" in
         *:"$argpath":*) ;;
         *) export PATH="$argpath:$PATH" ;;
