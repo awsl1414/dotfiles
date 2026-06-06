@@ -60,6 +60,10 @@ path_add "$HOMEBREW_PREFIX/opt/curl/bin"
 
 # ============================================
 # 工具初始化（所有 path_add 之后）
+# &>/dev/null 抑制所有输出，兼容 p10k instant prompt
+# 新增工具只需在此块内添加 eval 即可
 # ============================================
-eval "$(fnm env --use-on-cd --shell zsh)" 2>/dev/null  # Node.js (fnm)
-eval "$(zoxide init zsh)"                    # 智能目录跳转
+{
+    eval "$(fnm env --use-on-cd --shell zsh)"
+    eval "$(zoxide init zsh)"
+} &>/dev/null
