@@ -19,9 +19,6 @@ elif [[ "$ARCH" == "x86_64" ]]; then
 fi
 eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 
-# Rust (rustup)
-source "$HOME/.cargo/env"
-
 # Homebrew 可选工具
 if command -v brew >/dev/null 2>&1; then
     # JDK (自动检测最新版本)
