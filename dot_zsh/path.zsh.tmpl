@@ -3,9 +3,9 @@ export GOPATH=$HOME/go
 path_add "$GOPATH/bin"            # Go
 path_add "$HOME/.local/bin"       # pipx / 用户脚本
 path_add "$HOME/.bun/bin"         # Bun
+path_add "$HOME/.cargo/bin"       # Rust
 
 {{- if eq .chezmoi.os "linux" }}
-path_add "$HOME/.cargo/bin"       # Rust
 {{- end }}
 
 {{- if eq .chezmoi.os "darwin" }}
