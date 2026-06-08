@@ -47,6 +47,10 @@ if command -v brew >/dev/null 2>&1; then
     # Android NDK
     export ANDROID_NDK_HOME="$(brew --prefix)/share/android-ndk"
     path_add "$ANDROID_NDK_HOME"
+
+    # Rust
+    RUSTUP_PATH=$(brew --prefix rustup 2>/dev/null)
+    path_add "$RUSTUP_PATH/bin"
 fi
 
 # 其他工具
