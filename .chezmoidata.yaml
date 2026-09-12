@@ -6,5 +6,5 @@ mirrors:
   npm: "https://registry.npmmirror.com"
   go: "https://goproxy.cn,direct"
   rust: "https://rsproxy.cn"
-  node: "https://mirrors.bfsu.edu.cn/nodejs-release"
+  node: "https://mirrors.huaweicloud.com/nodejs"
   uv: "https://mirrors.cernet.edu.cn/pypi/web/simple"
