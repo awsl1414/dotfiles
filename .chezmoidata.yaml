@@ -7,4 +7,4 @@ mirrors:
   go: "https://goproxy.cn,direct"
   rust: "https://rsproxy.cn"
   node: "https://mirrors.huaweicloud.com/nodejs"
-  uv: "https://mirrors.cernet.edu.cn/pypi/web/simple"
+  uv: "https://mirrors.cloud.tencent.com/pypi/simple"
