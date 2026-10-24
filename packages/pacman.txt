@@ -48,7 +48,6 @@ uv
 go
 rustup
 deno
-fnm
 bun
 shellcheck
 golangci-lint

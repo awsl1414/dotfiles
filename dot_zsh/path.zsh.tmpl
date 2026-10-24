@@ -62,5 +62,6 @@ path_add "$HOMEBREW_PREFIX/opt/curl/bin"
 # ============================================
 # 工具初始化（所有 path_add 之后）
 # ============================================
-eval "$(fnm env --use-on-cd --shell zsh)"
 eval "$(zoxide init zsh)"
+
+eval "$(mise activate zsh)"
