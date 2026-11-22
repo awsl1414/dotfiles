@@ -1,3 +1,4 @@
+# full 档：GUI 应用与输入法主题
 linuxqq-nt
 visual-studio-code-bin
 wezterm-nightly-bin

@@ -1,0 +1,32 @@
+# base 档：shell、CLI 工具、终端与基础开发语言运行时
+# keyring
+archlinux-keyring
+archlinuxcn-keyring
+
+# 工具
+fastfetch
+btop
+jq
+aria2
+axel
+ccache
+
+# 终端/shell
+zoxide
+ghostty
+
+# 输入法
+fcitx5-im
+fcitx5-rime
+rime-ice-pinyin-git
+
+# 音频
+pipewire-jack
+noise-suppression-for-voice
+
+# 开发
+uv
+go
+deno
+bun
+golangci-lint
