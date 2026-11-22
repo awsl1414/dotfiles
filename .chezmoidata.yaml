@@ -8,3 +8,20 @@ mirrors:
   rust: "https://rsproxy.cn"
   node: "https://mirrors.huaweicloud.com/nodejs"
   uv: "https://mirrors.cloud.tencent.com/pypi/simple"
+
+profile: base
+kde: auto
+
+tiers:
+  full:
+    dirs:
+      - .config/zed/
+      - .config/kitty/
+    files: []
+
+# ARM 上官方仓库缺这些包，从 base 清单安装时跳过。
+# full 清单无需列出：ARM 上 $full 恒为假，full/pacman.txt 从不被读取
+arch_tweaks:
+  arm64:
+    pacman_skip:
+      - ghostty

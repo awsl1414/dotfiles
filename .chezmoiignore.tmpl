@@ -8,14 +8,31 @@
 .local/
 {{- end }}
 
-{{- if not (env "KDE_SESSION_VERSION")  }}
+{{- /* Arch ARM 的 .chezmoi.arch 同为 arm64，所以必须同时判断 os */}}
+{{- $isArm := and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") }}
+{{- $noFull := or (ne .profile "full") $isArm }}
+{{- if $noFull }}
+{{- /* {{ . }} 必须独占一行，写成 {{- range }}{{ . }} 会让多轮输出粘连成一个不存在的路径，ignore 静默失效 */}}
+{{- range .tiers.full.dirs }}
+{{ . }}
+{{- end }}
+{{- range .tiers.full.files }}
+{{ . }}
+{{- end }}
+{{- end }}
+
+{{- $kdeOn := or (eq .kde "on") (and (eq .kde "auto") (env "KDE_SESSION_VERSION")) }}
+{{- if not $kdeOn }}
 .config/dolphinrc
 .config/ktimezonedrc
 .config/mimeapps.list
 .config/plasma-localerc
-{{- end}}
+.config/user-dirs.locale
+{{- end }}
 
-# 包清单仅作为数据源，不部署到 home 目录
+{{- /* 仓库根的普通目录（无 dot_/private_ 前缀）会被当成目标目录部署，新增同级目录时同样要列进来 */}}
 packages/
 README.md
 CLAUDE.md
+AGENTS.md
+scripts/

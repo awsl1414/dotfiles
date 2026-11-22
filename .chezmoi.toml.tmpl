@@ -1,2 +1,9 @@
+{{- $profile := promptChoiceOnce . "profile" "配置档位" (list "base" "full") "base" -}}
+{{- $kde := promptChoiceOnce . "kde" "KDE 配置（auto=检测会话）" (list "auto" "on" "off") "auto" -}}
+
 [diff]
     exclude = ["scripts"]
+
+[data]
+    profile = {{ $profile | quote }}
+    kde = {{ $kde | quote }}
