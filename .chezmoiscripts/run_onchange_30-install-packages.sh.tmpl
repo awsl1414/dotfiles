@@ -1,42 +1,88 @@
+{{- $hashes := "" }}
+{{- range list "base/pacman.txt" "full/pacman.txt" "base/aur.txt" "full/aur.txt" "base/Brewfile" "full/Brewfile" }}
+{{- $hashes = printf "%s# manifest %s %s\n" $hashes . (include (joinPath "packages" .) | sha256sum) }}
+{{- end }}
+{{- /* 清单哈希写进脚本正文，改清单同样会改变脚本内容，run_onchange 才会重跑 */}}
+{{- $isArch := and (eq .chezmoi.os "linux") (stat "/etc/arch-release") }}
+{{- /* macOS 也自报 arm64，判断 ARM 必须带上 os，否则 Apple Silicon 上 full 档会被误关 */}}
+{{- $isArm := and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") }}
+{{- /* Arch ARM 上 full 档配置已被 ignore 层排除，再装 full 包只会得到没有配置的应用 */}}
+{{- $full := and (eq .profile "full") (not $isArm) }}
+{{- $skip := "" }}
+{{- if $isArm }}
+{{- $skip = join " " .arch_tweaks.arm64.pacman_skip }}
+{{- end }}
 {{- if eq .chezmoi.os "linux" -}}
 #!/bin/bash
+{{ $hashes -}}
+set -euo pipefail
 
-# 判断是否为 Arch Linux
-if [[ -f /etc/arch-release ]]; then
-    packages_dir="{{ .chezmoi.sourceDir }}/packages"
+{{ if $isArch -}}
+manifest_dir="{{ .chezmoi.sourceDir }}/packages"
+pacman_skip="{{ $skip }}"
 
-    # pacman (官方仓库)
-    pacman_file="$packages_dir/pacman.txt"
-    if [[ -f "$pacman_file" ]]; then
-        echo "正在从 pacman.txt 安装官方仓库包..."
-        grep -v '^#' "$pacman_file" | xargs sudo pacman -S --needed --noconfirm
-    else
-        echo "警告: $pacman_file 不存在"
+# 不用 xargs：清单只有注释时（packages/base/aur.txt）它会以空参数调用 pacman，后者报 no targets 而非零退出
+# 不用 mapfile：macOS 自带 bash 3.2 没有这个内建
+install_pacman() {
+    local file=$1 pkg
+    while IFS= read -r pkg; do
+        is_skipped "$pkg" && continue
+        sudo pacman -S --needed --noconfirm "$pkg" || echo "跳过（安装失败）：$pkg" >&2
+    done < <(grep -v '^[[:space:]]*#' "$file" | grep -v '^[[:space:]]*$')
+}
+
+# 清单跨架构共用，x64 也要装这些包，所以差异在安装时过滤而不是从清单删除
+is_skipped() {
+    local pkg=$1 skip
+    for skip in $pacman_skip; do
+        [[ "$pkg" == "$skip" ]] && return 0
+    done
+    return 1
+}
+
+install_aur() {
+    local file=$1 pkg
+    if ! command -v paru >/dev/null 2>&1; then
+        echo "警告: paru 未安装，跳过 $file" >&2
+        return 0
     fi
+    while IFS= read -r pkg; do
+        paru -S --needed --noconfirm "$pkg" || echo "跳过（安装失败）：$pkg" >&2
+    done < <(grep -v '^[[:space:]]*#' "$file" | grep -v '^[[:space:]]*$')
+}
 
-    # AUR (paru)
-    aur_file="$packages_dir/aur.txt"
-    if [[ -f "$aur_file" ]]; then
-        if command -v paru &>/dev/null; then
-            echo "正在从 aur.txt 安装 AUR 包..."
-            grep -v '^#' "$aur_file" | xargs paru -S --needed --noconfirm
-        else
-            echo "警告: paru 未安装，跳过 AUR 包安装"
-        fi
-    fi
-fi
-
+install_pacman "$manifest_dir/base/pacman.txt"
+install_aur "$manifest_dir/base/aur.txt"
+{{- if $full }}
+install_pacman "$manifest_dir/full/pacman.txt"
+install_aur "$manifest_dir/full/aur.txt"
+{{- end }}
 echo "包安装完成。"
+{{ else -}}
+# 非 Arch Linux 没有 pacman/paru，exit 0 让 apply 继续
+echo "非 Arch Linux，跳过包安装。"
+exit 0
+{{ end -}}
 {{- else if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
+{{ $hashes -}}
+set -euo pipefail
 
-brewfile="{{ .chezmoi.sourceDir }}/packages/Brewfile"
-if [[ -f "$brewfile" ]]; then
-    echo "正在通过 Brewfile 安装 macOS 包..."
-    brew bundle --file="$brewfile"
-else
-    echo "警告: $brewfile 不存在"
-fi
+manifest_dir="{{ .chezmoi.sourceDir }}/packages"
 
+# brew bundle 对不存在的 Brewfile 报错并以非零退出，在 set -e 下会中断整个 apply
+install_brewfile() {
+    local file=$1
+    if [[ ! -f "$file" ]]; then
+        echo "警告: $file 不存在，跳过" >&2
+        return 0
+    fi
+    brew bundle --file="$file" || echo "警告: $file 有安装失败的条目" >&2
+}
+
+install_brewfile "$manifest_dir/base/Brewfile"
+{{ if $full -}}
+install_brewfile "$manifest_dir/full/Brewfile"
+{{ end -}}
 echo "包安装完成。"
 {{- end -}}

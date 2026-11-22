@@ -5,9 +5,6 @@ path_add "$HOME/.local/bin"       # pipx / 用户脚本
 path_add "$HOME/.bun/bin"         # Bun
 path_add "$HOME/.cargo/bin"       # Rust
 
-{{- if eq .chezmoi.os "linux" }}
-{{- end }}
-
 {{- if eq .chezmoi.os "darwin" }}
 
 # Homebrew
@@ -64,4 +61,4 @@ path_add "$HOMEBREW_PREFIX/opt/curl/bin"
 # ============================================
 eval "$(zoxide init zsh)"
 
-eval "$(mise activate zsh)"
+command -v mise >/dev/null 2>&1 && eval "$(mise activate zsh)"
