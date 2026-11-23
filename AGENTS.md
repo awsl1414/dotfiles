@@ -43,7 +43,7 @@ chezmoi update                     # git pull 后 apply
 
 1. **`.chezmoiignore.tmpl`**：非 Linux 排除 makepkg、mirrors.zsh、`.config/go/`、fcitx5、pipewire、environment.d、`.local/`；full 档目录按 profile 与 ARM 规则排除；KDE 文件按 `kde` 参数排除
 2. **模板条件**：`{{ if eq .chezmoi.os "linux" }}` / `"darwin"` 分支，用在 zshrc、aliases、path 与两个安装脚本
-3. **平台专属文件**：kitty 的 `keybindings/linux.conf` 与 `keybindings/macos.conf` 分开维护
+3. **平台专属文件**：kitty 的 `keybindings/linux.conf` 与 `keybindings/macos.conf` 分开维护，但 `kitty.conf` 里的 `include` 当前是注释状态，改动后要在目标机上手动放开才生效
 
 写 ignore 时，`{{ . }}` 必须单独成行。写成 `{{- range }}{{ . }}` 会把多轮输出粘成一个不存在的路径，ignore 静默失效。判断 KDE 会话用 `env "KDE_SESSION_VERSION"` 模板函数；模板数据里没有 `.Env`，用它取环境变量会直接报错。
 
@@ -70,9 +70,11 @@ chezmoi update                     # git pull 后 apply
 - Arch 的 base：keyring、CLI 工具、终端、输入法与音频、基础语言运行时
 - Arch 的 full：字体、图形驱动、多媒体播放器与重型开发工具
 - macOS 的 base：CLI 工具、基础语言运行时、通用终端与常用 GUI 应用
-- macOS 的 full：重型工具、GUI 应用与 IDE，外加 vscode 扩展
+- macOS 的 full：重型工具、GUI 应用与 IDE
 
 两侧的划分不要求对称：同一个软件在两个平台可以属于不同档位。
+
+非核心仓库的 cask 必须同时写 `tap` 行并把 cask 改成全限定名（`cask "oomol-lab/tap/lockime"`）。裸名只在已 tap 的仓库和核心仓库里查找，核心仓库里同名 cask 可能已被 disable（如 `orca`），失败原因会误导成"名字写错"。`Brewfile` 里 `trusted: true` 写在 tap 行上。
 
 `packages/` 整目录被 ignore，只作为数据源。
 
