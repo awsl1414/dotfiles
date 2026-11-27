@@ -27,6 +27,5 @@ noise-suppression-for-voice
 # 开发
 uv
 go
-deno
 bun
 golangci-lint
